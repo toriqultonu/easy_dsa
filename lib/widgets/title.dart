@@ -1,4 +1,4 @@
-import 'package:demo_doc_vewer/model/constant.dart';
+import 'package:easy_dsa/model/constant.dart';
 import 'package:flutter/material.dart';
 
 class DataTitle extends StatelessWidget {

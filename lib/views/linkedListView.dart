@@ -1,11 +1,11 @@
 import 'package:dart_code_viewer/dart_code_viewer.dart';
-import 'package:demo_doc_vewer/model/constant.dart';
-import 'package:demo_doc_vewer/widgets/appBar.dart';
-import 'package:demo_doc_vewer/widgets/description.dart';
-import 'package:demo_doc_vewer/widgets/image_data.dart';
-import 'package:demo_doc_vewer/widgets/navigation_drawer.dart';
-import 'package:demo_doc_vewer/widgets/tileButton.dart';
-import 'package:demo_doc_vewer/widgets/title.dart';
+import 'package:easy_dsa/model/constant.dart';
+import 'package:easy_dsa/widgets/appBar.dart';
+import 'package:easy_dsa/widgets/description.dart';
+import 'package:easy_dsa/widgets/image_data.dart';
+import 'package:easy_dsa/widgets/navigation_drawer.dart';
+import 'package:easy_dsa/widgets/tileButton.dart';
+import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

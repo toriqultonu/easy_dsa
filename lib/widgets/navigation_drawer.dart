@@ -1,7 +1,7 @@
-import 'package:demo_doc_vewer/model/constant.dart';
-import 'package:demo_doc_vewer/model/data_structure_icons.dart';
-import 'package:demo_doc_vewer/views/arrayView.dart';
-import 'package:demo_doc_vewer/views/linkedListView.dart';
+import 'package:easy_dsa/model/constant.dart';
+import 'package:easy_dsa/model/data_structure_icons.dart';
+import 'package:easy_dsa/views/arrayView.dart';
+import 'package:easy_dsa/views/linkedListView.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatefulWidget {
