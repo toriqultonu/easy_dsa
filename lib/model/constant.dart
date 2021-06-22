@@ -7,6 +7,7 @@ const kPrimaryThemeColor = Color(0xFFCCFF99);
 const kSecondaryThemeColor = Color(0xFF404040);
 const kSecondaryThemeColor2 = Color(0xFF808080);
 const kCodeBackGroundColor = Color(0xFFE5FFCC);
+const kAppBarIconColor = Colors.black87;
 
 ///FontColor
 const kHeaderFontColor = Colors.white;

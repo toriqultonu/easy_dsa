@@ -26,6 +26,7 @@ class _ArrayState extends State<Array> {
     return Scaffold(
       drawer: NavigationDrawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
           str1: 'Array',

@@ -14,6 +14,7 @@ class BidirectionalList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
           str1: 'বাইডিরেকশনাল লিংকড লিস্ট',

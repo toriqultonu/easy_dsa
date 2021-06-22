@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       drawer: NavigationDrawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(str1: 'Data',str2:'Structure'),
         centerTitle: true,

@@ -20,6 +20,7 @@ class _StackViewState extends State<StackView> {
     return Scaffold(
       drawer: NavigationDrawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(str1: 'স্ট্যাক', str2: '',),
         centerTitle: true,

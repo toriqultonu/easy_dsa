@@ -22,6 +22,7 @@ class _LinkedListState extends State<LinkedList> {
     return Scaffold(
       drawer: NavigationDrawer(),
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
           str1: 'লিংকড লিস্ট',
