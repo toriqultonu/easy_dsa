@@ -1,7 +1,7 @@
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/model/data_structure_icons.dart';
-import 'package:easy_dsa/views/arrayView.dart';
-import 'package:easy_dsa/views/linkedListView.dart';
+import 'package:easy_dsa/views/array/arrayView.dart';
+import 'package:easy_dsa/views/linkedList/linkedListView.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatefulWidget {
