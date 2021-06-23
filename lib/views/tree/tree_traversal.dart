@@ -16,7 +16,7 @@ class TreeTraversal extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'বাইনারি সার্চ ট্রি',
+          str1: 'Traversal',
         ),
         centerTitle: true,
         elevation: 0.0,
