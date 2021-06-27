@@ -5,7 +5,7 @@ import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
 import 'package:easy_dsa/views/linkedList/linkedListView.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
-import 'package:easy_dsa/views/stack/stackView.dart';
+import 'package:easy_dsa/views/stack/stackView2.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
 
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         Home.id: (context) => Home(),
         Array.id: (context) => Array(),
         LinkedList.id: (context) => LinkedList(),
-        StackView.id: (context) => StackView(),
+        StackView2.id: (context) => StackView2(),
         Queue.id: (context) => Queue(),
         Tree.id: (context) => Tree(),
         HashTable.id: (context) => HashTable(),

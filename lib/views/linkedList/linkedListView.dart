@@ -187,6 +187,7 @@ int main(){
   print();
     return 0;
 }
+
                 ''',
                 stringStyle: kCodeTextStyle,
 
@@ -230,6 +231,7 @@ previous_node=current_node; //Save the previous node
   }
 	
 }
+
                 ''',
                 stringStyle: kCodeTextStyle,
               ),
