@@ -3,7 +3,7 @@ import 'package:easy_dsa/views/hashTableView.dart';
 import 'package:easy_dsa/views/home.dart';
 import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
-import 'package:easy_dsa/views/linkedList/linkedListView.dart';
+import 'package:easy_dsa/views/linkedList/linkedListView2.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
 import 'package:easy_dsa/views/stack/stackView2.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Home.id: (context) => Home(),
         Array.id: (context) => Array(),
-        LinkedList.id: (context) => LinkedList(),
+        LinkedList2.id: (context) => LinkedList2(),
         StackView2.id: (context) => StackView2(),
         Queue.id: (context) => Queue(),
         Tree.id: (context) => Tree(),
