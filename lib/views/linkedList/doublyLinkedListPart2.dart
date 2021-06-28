@@ -16,7 +16,7 @@ class DoublyLinkedList2 extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Singly Linked List',
+          str1: 'Doubly Linked List 2',
         ),
         centerTitle: true,
         elevation: 0.0,
