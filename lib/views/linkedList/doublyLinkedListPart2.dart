@@ -124,7 +124,7 @@ if(i == position){ // desired position found
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 500,
+              height: 700,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>
