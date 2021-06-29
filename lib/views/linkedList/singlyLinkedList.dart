@@ -49,7 +49,7 @@ class SinglyLinkedList extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 struct linked_list
 {
@@ -70,7 +70,7 @@ node *head=NULL, *last=NULL;
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void insert_at_last(int value)
 {
@@ -108,7 +108,7 @@ void insert_at_last(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 void insert_at_first(int value)
 {
@@ -183,7 +183,7 @@ void insert_after(int key, int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void delete_item(int value)
 {
@@ -231,7 +231,7 @@ void delete_item(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void search_item(int value)
 {
@@ -263,7 +263,7 @@ void search_item(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

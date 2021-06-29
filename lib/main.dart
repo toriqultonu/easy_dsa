@@ -6,7 +6,10 @@ import 'package:easy_dsa/views/hashTable/hashTableView.dart';
 import 'package:easy_dsa/views/home.dart';
 import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
+import 'package:easy_dsa/views/linkedList/createLinkedList.dart';
+import 'package:easy_dsa/views/linkedList/doublyLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/linkedListView.dart';
+import 'package:easy_dsa/views/linkedList/singlyLinkedList.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
 import 'package:easy_dsa/views/stack/stackView.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
@@ -34,6 +37,9 @@ class MyApp extends StatelessWidget {
 
         ///LinkedList
         LinkedList.id: (context) => LinkedList(),
+        CreateLinkedList.id: (context) => CreateLinkedList(),
+        SinglyLinkedList.id:(context) => SinglyLinkedList(),
+        DoublyLinkedList.id:(context) => DoublyLinkedList(),
 
         ///Stack
         StackView.id: (context) => StackView(),
