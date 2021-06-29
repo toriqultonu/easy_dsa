@@ -14,6 +14,7 @@ import 'package:easy_dsa/views/linkedList/doublyInsertion.dart';
 import 'package:easy_dsa/views/linkedList/doublyLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/linkedListView.dart';
 import 'package:easy_dsa/views/linkedList/singlyLinkedList.dart';
+import 'package:easy_dsa/views/queue/dqueue.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
 import 'package:easy_dsa/views/stack/bracket.dart';
 import 'package:easy_dsa/views/stack/stackView.dart';
@@ -43,19 +44,20 @@ class MyApp extends StatelessWidget {
         ///LinkedList
         LinkedList.id: (context) => LinkedList(),
         CreateLinkedList.id: (context) => CreateLinkedList(),
-        SinglyLinkedList.id:(context) => SinglyLinkedList(),
-        DoublyLinkedList.id:(context) => DoublyLinkedList(),
-        DoublyInsertion.id:(context) => DoublyInsertion(),
-        DoublyDeletion.id:(context) => DoublyDeletion(),
-        CircularLinkedList.id:(context) => CircularLinkedList(),
-        CircularLinkedList2.id:(context) => CircularLinkedList2(),
+        SinglyLinkedList.id: (context) => SinglyLinkedList(),
+        DoublyLinkedList.id: (context) => DoublyLinkedList(),
+        DoublyInsertion.id: (context) => DoublyInsertion(),
+        DoublyDeletion.id: (context) => DoublyDeletion(),
+        CircularLinkedList.id: (context) => CircularLinkedList(),
+        CircularLinkedList2.id: (context) => CircularLinkedList2(),
 
         ///Stack
         StackView.id: (context) => StackView(),
-        Bracket.id:(context) => Bracket(),
+        Bracket.id: (context) => Bracket(),
 
         ///Queue
         Queue.id: (context) => Queue(),
+        DeQueue.id: (context) => DeQueue(),
 
         ///Tree
         Tree.id: (context) => Tree(),

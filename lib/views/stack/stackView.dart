@@ -4,6 +4,7 @@ import 'package:easy_dsa/views/queue/dqueue.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
 import 'package:easy_dsa/widgets/image_data.dart';
+import 'package:easy_dsa/widgets/navigation_drawer.dart';
 import 'package:easy_dsa/widgets/tileButton.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
@@ -19,11 +20,13 @@ class _StackViewState extends State<StackView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavigationDrawer(),
       appBar: AppBar(
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'DeQueue',
+          str1: 'Stack',
+          str2: '',
         ),
         centerTitle: true,
         elevation: 0.0,

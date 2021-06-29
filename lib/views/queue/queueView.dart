@@ -3,6 +3,7 @@ import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
 import 'package:easy_dsa/widgets/navigation_drawer.dart';
+import 'package:easy_dsa/widgets/tileButton.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
@@ -156,6 +157,8 @@ void dequeue()
             ),
             kTitleGap,
             Description(description: 'প্রথমে চেক করা হয়েছে কিউটা খালি কিনা। খালি হলে তো আর কোন ডেটাকে প্রসেস করা বা সেটাকে রিমুভ করা যাবে না। যদি খালি না হয়ে থাকে তাহলে mySqueue এর front-তম ইন্ডেক্সের মানটা প্রিন্ট করা হয়েছে। এরপর front এর মান বাড়িয়ে দেয়া হয়েছে। পরে আবারো dequeue() কল করা হলে অ্যারের পরের ইন্ডেক্সের মান প্রিন্ট করা হবে। অ্যারেতে ভ্যালু থেকেই যাচ্ছে, কিন্তু front ভেরিয়েবলের মাধ্যমে কিউয়ের শুরুর পয়েন্টটা আমরা কন্ট্রোল করছি। front++ করার মানেই আমরা ধরে নিচ্ছি ফ্রন্টের ভ্যালুটা কিউ থেকে বের করে দেয়া হয়েছে। আর যেহেতু একটা ডেটা কমে গেল তাই dataCounter এর মানও এক কমিয়ে দেয়া হয়েছে।'),
+            kTitleGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'More on Dequeue', ID: 'dequeue',),
             kTitleGap,
             Container(
               margin: kSidePadding,
