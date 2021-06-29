@@ -3,6 +3,7 @@ import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
 import 'package:easy_dsa/widgets/image_data.dart';
 import 'package:easy_dsa/widgets/navigation_drawer.dart';
+import 'package:easy_dsa/widgets/tileButton.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
@@ -98,6 +99,10 @@ class _TreeState extends State<Tree> {
             Description(description: 'Ancestor: যদি A নাড থেকে B নােডে যাওয়া যায় তাহলে A হচ্ছে। B এর ancestor. যদি A->B->C->D যাওয়া যায়। তাহলে D এর ancestor হচ্ছে A, B ও C.',),
             kDescriptionGap,
             Description(description: 'Descendant: যদি A নােড থেকে B নােডে যাওয়া যায় তাহলে B হচ্ছে A এর descendant. যদি A->B->C->D যাওয়া যায়। তাহলে D হচ্ছে A, B ও C এর descendant',),
+            kTitleGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Application & Classification of Tree', ID: 'applicationoftree',),
+            kDescriptionGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Binary Search Tree', ID: 'binarysearchTRee',),
             kTitleGap,
             DataTitle(title: 'Some properties of Tree',),
             kDescriptionGap,

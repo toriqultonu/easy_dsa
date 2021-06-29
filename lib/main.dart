@@ -18,7 +18,12 @@ import 'package:easy_dsa/views/queue/dqueue.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
 import 'package:easy_dsa/views/stack/bracket.dart';
 import 'package:easy_dsa/views/stack/stackView.dart';
+import 'package:easy_dsa/views/tree/application_of_trees.dart';
+import 'package:easy_dsa/views/tree/binary_search_tree.dart';
+import 'package:easy_dsa/views/tree/delete_node.dart';
+import 'package:easy_dsa/views/tree/maximum_minimum.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
+import 'package:easy_dsa/views/tree/tree_traversal.dart';
 
 import 'package:flutter/material.dart';
 void main() async {
@@ -61,6 +66,12 @@ class MyApp extends StatelessWidget {
 
         ///Tree
         Tree.id: (context) => Tree(),
+        ApplicationOfTree.id: (context) => ApplicationOfTree(),
+        BinarySearchTRee.id: (context) => BinarySearchTRee(),
+        TreeTraversal.id: (context) => TreeTraversal(),
+        MaximumMinimum.id: (context) => MaximumMinimum(),
+        DeleteNode.id: (context) => DeleteNode(),
+
 
         ///HashTable
         HashTable.id: (context) => HashTable(),

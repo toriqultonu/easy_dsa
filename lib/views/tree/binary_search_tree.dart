@@ -3,6 +3,7 @@ import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
 import 'package:easy_dsa/widgets/image_data.dart';
+import 'package:easy_dsa/widgets/tileButton.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
@@ -63,6 +64,10 @@ class BinarySearchTRee extends StatelessWidget {
             Description(description: '* In-order Traversal - প্রথমে left sub-tree ভিজিট করবে, এরপর root, অতঃপর right sub-tree ভিজিট করবে',),
             Description(description: '* Pre-order Traversal - প্রথমেই root ভিজিট হবে, এরপর যথাক্রমে left sub-tree ও right sub-tree ভিজিট হবে',),
             Description(description: '* Post-order Traversal – প্রথমেই left sub-tree এরপর ভিজিট হবে right sub-tree সবার শেষ ভিজিট হবে root',),
+            kTitleGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Binary Search Tree Traversal', ID: 'treetraversal',),
+            kDescriptionGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Find max and min in BST', ID: 'maxmin',),
             kTitleGap,
             DataTitle(title: 'Implementation of Binary Search Tree – BST',),
             kDescriptionGap,
@@ -205,6 +210,8 @@ void searchOnTree(int value)
             ),
             kTitleGap,
             Description(description: 'root node থেকে সবগুলা নােডে ট্রোভার্স করব, যতক্ষণ না পর্যন্ত আইটেম পাওয়া যায় এবং কোনোে নােডের মেমরি অ্যাড্রেস NULL না হয়। যদি নোডের number ও value সমান হয় তাহলে flag = 1 করে লুপ ব্রেক করতে হবে। লুপের বাইরে flag এর মানের উপর ভিত্তি করে decision নেয়া হচ্ছে। value-টা ট্রিতে পাওয়া গেছে কিনা। লুপের ভিতরে যদি কোনাে একটা স্টেজে currentNode-&gt;number==value না হয় তাহলে চেক করতে হবে value টা নােডের number এর চেয়ে ছােট নাকি বড়। যদি value ছােট বা সমান হয় তাহলে ইনসার্টের মতই currentNode এর leftChild এ গিয়ে খুঁজে দেখতে হবে, অন্যথায় rightChild এ গিয়ে খুঁজতে হবে। কোনো একটা পর্যায়ে গিয়ে যদি কোনাে নােডের অ্যাড্রেস হিসাবে NULL value পাওয়া যায় তাহলে বুঝতে হবে value-টা ট্রিতে অনুপস্থিত। তখন লুপ ব্রেক করে ফাংশনের কাজ শেষ করতে হবে।',),
+            kTitleGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Delete any node of BST', ID: 'deletenode',),
             kTitleGap,
             Container(
               margin: kSidePadding,
