@@ -26,7 +26,7 @@ class TileButton extends StatelessWidget {
             SizedBox(width: 10,),
             Icon(iconData, color: Colors.white70, size: kInTextIconSize,),
             SizedBox(width: 5,),
-            Text(buttontitle, style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: kDescriptionFontSize),)
+            Expanded(child: Text(buttontitle, style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: kDescriptionFontSize),))
           ],
         ),
       ),

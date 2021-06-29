@@ -6,6 +6,8 @@ import 'package:easy_dsa/views/hashTable/hashTableView.dart';
 import 'package:easy_dsa/views/home.dart';
 import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
+import 'package:easy_dsa/views/linkedList/circularLinkedList.dart';
+import 'package:easy_dsa/views/linkedList/circularLinkedListPart2.dart';
 import 'package:easy_dsa/views/linkedList/createLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/doublyDeletion.dart';
 import 'package:easy_dsa/views/linkedList/doublyInsertion.dart';
@@ -44,6 +46,8 @@ class MyApp extends StatelessWidget {
         DoublyLinkedList.id:(context) => DoublyLinkedList(),
         DoublyInsertion.id:(context) => DoublyInsertion(),
         DoublyDeletion.id:(context) => DoublyDeletion(),
+        CircularLinkedList.id:(context) => CircularLinkedList(),
+        CircularLinkedList2.id:(context) => CircularLinkedList2(),
 
         ///Stack
         StackView.id: (context) => StackView(),

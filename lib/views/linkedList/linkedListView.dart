@@ -198,6 +198,8 @@ head = (node *) malloc(sizeof(node)); //node  assign
             TileButton(iconData: Icons.play_arrow, buttontitle: 'Insert, Delete & Search Operation', ID: 'singlylinkedlist',),
             kDescriptionGap,
             TileButton(iconData: Icons.play_arrow, buttontitle: 'Doubly Linked List', ID: 'doublylinkedlist',),
+            kDescriptionGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Circular Linked List', ID: 'circularlinkedlist',),
             kHeaderGap,
           ],
         ),
