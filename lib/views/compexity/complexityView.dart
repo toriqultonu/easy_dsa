@@ -7,14 +7,14 @@ import 'package:easy_dsa/widgets/navigation_drawer.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
-class Complxity extends StatefulWidget {
-  static String id = 'complxity';
+class Complexity extends StatefulWidget {
+  static String id = 'complexity';
 
   @override
-  _ComplxityState createState() => _ComplxityState();
+  _ComplexityState createState() => _ComplexityState();
 }
 
-class _ComplxityState extends State<Complxity> {
+class _ComplexityState extends State<Complexity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

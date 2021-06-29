@@ -29,7 +29,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               buildMenuItem(text: "কিউ (Queue)", icon: DataStructure.queue, context: context, ID: 'queue'),
               buildMenuItem(text: "ট্রি (Tree)", icon: DataStructure.trees, context: context, ID: 'tree'),
               buildMenuItem(text: "হ্যাশটেবিল (HashTable)", icon: DataStructure.hashtable, context: context, ID: 'hashtable'),
-              buildMenuItem(text: "VideoPlay", icon: Icons.ondemand_video, context: context, ID: 'networkvideo'),
+              buildMenuItem(text: "কমপ্লেক্সিটি (Complexity)", icon: Icons.access_time, context: context, ID: 'complexity'),
             ]
           ),
         ),

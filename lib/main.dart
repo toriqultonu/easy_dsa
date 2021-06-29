@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
         HashTable.id: (context) => HashTable(),
 
         ///Complexity
-        Complxity.id: (context) => Complxity(),
+        Complexity.id: (context) => Complexity(),
 
         ///Other
         BidirectionalList.id: (context) => BidirectionalList(),
