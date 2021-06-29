@@ -15,6 +15,7 @@ import 'package:easy_dsa/views/linkedList/doublyLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/linkedListView.dart';
 import 'package:easy_dsa/views/linkedList/singlyLinkedList.dart';
 import 'package:easy_dsa/views/queue/queueView.dart';
+import 'package:easy_dsa/views/stack/bracket.dart';
 import 'package:easy_dsa/views/stack/stackView.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
 
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
 
         ///Stack
         StackView.id: (context) => StackView(),
+        Bracket.id:(context) => Bracket(),
 
         ///Queue
         Queue.id: (context) => Queue(),

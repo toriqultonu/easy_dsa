@@ -16,19 +16,19 @@ class CircularLinkedList2 extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Circular Linked List 2',
+          str1: 'Doubly Circular Linked List',
         ),
         centerTitle: true,
         elevation: 0.0,
-        actions: [
-          Opacity(
-            opacity: 0.0,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Icon(Icons.add),
-            ),
-          )
-        ],
+        // actions: [
+        //   Opacity(
+        //     opacity: 0.0,
+        //     child: Container(
+        //       padding: EdgeInsets.symmetric(horizontal: 16),
+        //       child: Icon(Icons.add),
+        //     ),
+        //   )
+        // ],
       ),
       body: Container(
         color: kSecondaryThemeColor,

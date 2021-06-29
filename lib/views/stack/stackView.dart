@@ -4,6 +4,7 @@ import 'package:easy_dsa/views/queue/dqueue.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
 import 'package:easy_dsa/widgets/image_data.dart';
+import 'package:easy_dsa/widgets/tileButton.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
@@ -188,6 +189,8 @@ class _StackViewState extends State<StackView> {
             Description(description: 'Array/Stack থেকে কিন্তু সত্যিকারার্থে টপ ভ্যালুটা মুছে দেয়া হয়নি। বরং আমরা যেই ভ্যারিয়েবল দিয়ে আমাদের ভ্যালুর সংখ্যা হিসাব রাখছিলাম তার মান এক কমিয়ে দিলাম। ধরো স্ট্যাকের ৩ নাম্বার ইন্ডেক্সে (top=3) মান আছে ২৫। এই অবস্থায় pop() কল দেয়া হল। তখন myStack[3] তে ২৫ ঠিকই আছে কিন্তু top এর মান কমে দাঁড়িয়েছে ২। এখন যদি আবার push(57) ফাংশন কল করা হয় তখন top এর মান ১ বেড়ে হবে ৩। myStack[3] এর মানটা রিপ্লেস হয়ে যাবে নতুন ভ্যালু 57 দ্বারা।',),
             kDescriptionGap,
             Description(description: 'pop() function এর শুরুতেই একটা চেক রাখা হয়েছে top এর মান শূণ্যের চেয়ে কম কিনা। top এর মান শূণ্যের চেয়ে কম হবার অর্থ হচ্ছে স্ট্যাকে কোন ডেটা নাই। top এর মান 0 হবার মানে হচ্ছে। স্ট্যাকে ১ টা ডেটা আছে, যাকে পাওয়া যাবে myStack[0] তে। Stack এ কোন ভ্যালু নাই, কিন্তু pop করে ভ্যালুকে রিমুভ করার চেষ্টা করা হলে বা peek/read করার চেষ্টা করা হলে উদ্ভুত পরিস্থিতিতে বলা হয় stack underflow.',),
+            kTitleGap,
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'Bracket Balancing with Stack', ID: 'bracket',),
             kTitleGap,
             DataTitle(title: 'Complexity of Stack Operations',),
             kDescriptionGap,
