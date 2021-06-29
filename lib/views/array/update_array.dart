@@ -2,6 +2,7 @@ import 'package:dart_code_viewer/dart_code_viewer.dart';
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
+import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
 class UpdateArray extends StatelessWidget {
@@ -14,7 +15,7 @@ class UpdateArray extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Update Array',
+          str1: 'More Array Operation',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -65,7 +66,7 @@ while(true) //Infinite Loop
             kTitleGap,
             Description(description: 'মূল ব্যাপারটা এটাই। এখন যখন যেভাবে দরকার হবে সেভাবে নিজের মত করে ইমপ্লিমেন্ট করতে হবে। তবে খেয়াল রাখতে হবে যে অ্যারেতে যেই ইন্ডেক্সটি নাই সে ইন্ডেক্সে অ্যাক্সেস করছাে কিনা। অর্থাৎ কোন একটা অ্যারের সাইজ ১০ হলে তার তার ইন্ডেক্সগুলো হবে ০ থেকে ৯ পর্যন্ত। তুমি যদি অ্যারের ১০ম বা ১২তম ইন্ডেক্সে কান মান বসাতে চাও বা ১২তম ইন্ডেক্সের মান প্রিন্ট করতে চাও তাহলে প্রােগ্রাম ক্র্যাশ করবে। অনলাইন জাজ বা কনটেস্টের সময় এধরণের ঘটনায় Run Time Error নামক verdict পাবা। তাই অ্যারেতে ট্রাভার্স, ইনসার্ট, আপডেট, ডিলেট যেই অপারেশনই করাে না কেন; খেয়াল রাখবে যেন এই সমস্যা তৈরি না হয়। ',),
             kTitleGap,
-            Description(description: 'Deletion an Element of Array',),
+            DataTitle(title: 'Deletion an Element of Array',),
             kDescriptionGap,
             Description(description: 'স্টোর করা ডেটাগুলাে প্রয়ােজনে ডিলেট করার দরকার হতে পারে। অ্যারেতে সিকোয়েন্স অনুযায়ী ডেটা স্টোর করা থাকে। age নামক অ্যারের সাইজ ১০ হলে তার ইন্ডেক্স নাম্বার হবে ০ থেকে ৯। আমরা যদি age[6] এর ডেটাকে অ্যারে থেকে মুছে ফেলতে চাই তাহলে age[7] এর ভ্যালুকে অ্যাসাইন করতে হবে age[6] এ। age[8] এর ভ্যালুকে অ্যাসাইন করতে হবে age[7] এ। age[9] এর ভ্যালু অ্যাসাইন করতে হবে age[8] এ। তারমানে age[7] থেকে age[9] পর্যন্ত সবগুলাে ভ্যালুকে আমরা ১ ঘর করে বাম দিকে সরিয়ে দিলাম। কোডটা দেখলে আরো ক্লিয়ার হবেঃ',),
             kTitleGap,

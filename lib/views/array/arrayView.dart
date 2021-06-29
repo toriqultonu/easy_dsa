@@ -170,7 +170,7 @@ for(i = 0; i<number_of_student; i++)
             kTitleGap,
             TileButton(iconData: Icons.play_arrow, buttontitle: 'Array Traversing', ID: 'arraytraversing',),
             kDescriptionGap,
-            TileButton(iconData: Icons.play_arrow, buttontitle: 'Array Deletion, Searching, Sorting', ID: 'updatearray',),
+            TileButton(iconData: Icons.play_arrow, buttontitle: 'More Array Operations', ID: 'updatearray',),
             kHeaderGap,
             kHeaderGap,
             kHeaderGap,
