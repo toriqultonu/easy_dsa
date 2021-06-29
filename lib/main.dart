@@ -1,5 +1,5 @@
 import 'package:easy_dsa/views/array/arrayView.dart';
-import 'package:easy_dsa/hashTable/hashTableView.dart';
+import 'package:easy_dsa/views/hashTable/hashTableView.dart';
 import 'package:easy_dsa/views/home.dart';
 import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';

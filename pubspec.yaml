@@ -51,6 +51,8 @@ flutter:
   assets:
     - Images/
     - Images/tree/
+    - Images/linkedlist/
+    - Images/hashtable/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
