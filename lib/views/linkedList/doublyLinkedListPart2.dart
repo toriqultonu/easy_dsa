@@ -54,7 +54,7 @@ class DoublyLinkedList2 extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 200,
               child: DartCodeViewer(r'''
 {
 ... ... ...
@@ -89,7 +89,7 @@ if(head==NULL) return;
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 {
 ... ... ...
@@ -124,7 +124,7 @@ if(i == position){ // desired position found
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

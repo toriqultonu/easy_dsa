@@ -208,7 +208,7 @@ void searchOnTree(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

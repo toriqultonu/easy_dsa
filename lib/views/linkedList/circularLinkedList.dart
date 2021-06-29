@@ -77,7 +77,7 @@ class CircularLinkedList extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void insert_at_head(int number)
 {
@@ -116,7 +116,7 @@ void insert_at_head(int number)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void insert_at_tail(int number)
 {
@@ -155,7 +155,7 @@ void insert_at_tail(int number)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 250,
+              height: 350,
               child: DartCodeViewer(r'''
 void insert_at_middle(int number, int position)
 {
@@ -204,7 +204,7 @@ void insert_at_middle(int number, int position)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void delete_head(){
     if(head==NULL)  return;
@@ -226,7 +226,7 @@ void delete_head(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void delete_tail(){
     if(head==NULL)  return;
@@ -255,7 +255,7 @@ void delete_tail(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 250,
+              height: 350,
               child: DartCodeViewer(r'''
 void delete_middle(int position){
     if(head==NULL)  return;
@@ -301,7 +301,7 @@ void delete_middle(int position){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void print_list(){
     if(head==NULL)  return;
@@ -322,7 +322,7 @@ void print_list(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

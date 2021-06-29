@@ -342,7 +342,7 @@ int main()
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 struct item{    
     int key;    
@@ -369,7 +369,7 @@ struct item{
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 int hashFunction(int key){    
     int hashValue=0;     
@@ -392,7 +392,7 @@ int hashFunction(int key){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 void insertItem(int key, string name){    
     int hashValue = hashFunction(key); 
@@ -411,7 +411,7 @@ void insertItem(int key, string name){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 bool searchItem(int key){   
     int i,hashValue = hashFunction(key);
@@ -433,7 +433,7 @@ bool searchItem(int key){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 bool deleteItem(int key){    
     int i,hashValue = hashFunction(key);
@@ -455,7 +455,7 @@ bool deleteItem(int key){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<bits/stdc++.h>
 

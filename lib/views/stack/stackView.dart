@@ -79,7 +79,7 @@ class _StackViewState extends State<StackView> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
         #include<stack>
         
@@ -107,7 +107,7 @@ class _StackViewState extends State<StackView> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 200,
               child: DartCodeViewer(r'''
         #define stackSize 100
         int myStack[stackSize], top = -1; //Global variables
@@ -145,7 +145,7 @@ class _StackViewState extends State<StackView> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 150,
               child: DartCodeViewer(r'''
           void peek()
     {
@@ -171,7 +171,7 @@ class _StackViewState extends State<StackView> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 150,
               child: DartCodeViewer(r'''
     void pop()
     {
@@ -197,7 +197,7 @@ class _StackViewState extends State<StackView> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 600,
+              height: 500,
               child: DartCodeViewer(r'''
   #include<stdio.h>
 #define stackSize 3

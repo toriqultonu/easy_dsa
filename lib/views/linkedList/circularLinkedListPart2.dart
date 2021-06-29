@@ -90,7 +90,7 @@ class CircularLinkedList2 extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void insert_at_head(int number){
     node *newNode = (node *) malloc(sizeof(node));
@@ -131,7 +131,7 @@ void insert_at_head(int number){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 void insert_at_tail(int number){
     node *newNode = (node *) malloc(sizeof(node));
@@ -166,7 +166,7 @@ void insert_at_tail(int number){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 250,
+              height: 300,
               child: DartCodeViewer(r'''
 void insert_at_middle(int number, int position){
     if(position==1){
@@ -222,7 +222,7 @@ void insert_at_middle(int number, int position){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void delete_head(){
     if(head==NULL)  return;
@@ -249,7 +249,7 @@ void delete_head(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void delete_tail(){
     if(head==NULL)  return;
@@ -279,7 +279,7 @@ void delete_tail(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 200,
+              height: 300,
               child: DartCodeViewer(r'''
 void delete_middle(int position){
     if(head==NULL)  return;
@@ -324,7 +324,7 @@ void delete_middle(int position){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void print_forward_order(){
     if(head==NULL)  return;
@@ -346,7 +346,7 @@ void print_forward_order(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 void print_reverse_order(){
     if(head==NULL)  return; // also can check `tail==NULL`
@@ -364,7 +364,7 @@ void print_reverse_order(){
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

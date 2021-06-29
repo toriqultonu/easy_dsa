@@ -51,7 +51,7 @@ class UpdateArray extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 150,
               child: DartCodeViewer(r'''
 while(true) //Infinite Loop
 {
@@ -71,7 +71,7 @@ while(true) //Infinite Loop
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 200,
+              height: 300,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 

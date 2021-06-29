@@ -67,7 +67,7 @@ class DoublyLinkedList extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 struct linked_list
 {
@@ -95,7 +95,7 @@ node *head=NULL, *tail=NULL;
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 300,
               child: DartCodeViewer(r'''
 void insert_at_tail(int value)
 {
@@ -128,7 +128,7 @@ void insert_at_tail(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 300,
               child: DartCodeViewer(r'''
 void insert_at_first(int value)
 {
@@ -165,7 +165,7 @@ void insert_at_first(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 200,
+              height: 250,
               child: DartCodeViewer(r'''
 void insert_at_middle(int value, int position)
 {
@@ -210,7 +210,7 @@ void insert_at_middle(int value, int position)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 200,
               child: DartCodeViewer(r'''
 void printLinkedListForward()
 {
@@ -242,7 +242,7 @@ void printLinkedListForward()
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 200,
               child: DartCodeViewer(r'''
 void printLinkedListBackward()
 {
@@ -270,7 +270,7 @@ void printLinkedListBackward()
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>

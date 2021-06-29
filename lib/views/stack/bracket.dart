@@ -58,7 +58,7 @@ class Bracket extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
     for(int i=0; str[i]; i++){
     
@@ -84,7 +84,7 @@ class Bracket extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 200,
+              height: 300,
               child: DartCodeViewer(r'''
     #include<bits/stdc++.h>
 

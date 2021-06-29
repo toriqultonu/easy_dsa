@@ -57,7 +57,7 @@ class _ComplxityState extends State<Complxity> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 int myAlgorithm1(int n)
 {
@@ -77,7 +77,7 @@ int myAlgorithm1(int n)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 int myAlgorithm2(int n)
 {
@@ -100,7 +100,7 @@ int myAlgorithm2(int n)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 int myAlgorithm3(int n)
 {
@@ -127,7 +127,7 @@ int myAlgorithm3(int n)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 int myAlgorithm4(int n,int *val,int key)
 {
@@ -154,7 +154,7 @@ int myAlgorithm4(int n,int *val,int key)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 70,
+              height: 150,
               child: DartCodeViewer(r'''
 int myAlgorithm5(int n)
 {
@@ -178,7 +178,7 @@ int myAlgorithm5(int n)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 int myAlgorithm6(char *s)
 {

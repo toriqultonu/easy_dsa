@@ -120,7 +120,7 @@ void enqueue(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 150,
               child: DartCodeViewer(r'''
  if(myQueue.empty() != true)
 {
@@ -137,7 +137,7 @@ void enqueue(int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 200,
               child: DartCodeViewer(r'''
 void dequeue()
 {

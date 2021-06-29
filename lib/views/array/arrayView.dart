@@ -55,7 +55,7 @@ class _ArrayState extends State<Array> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
   scanf(“%d”, &age0);
 scanf(“%d”, &age1);
@@ -91,7 +91,7 @@ scanf(“%d”, &age2);
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 50,
+              height: 100,
               child: DartCodeViewer(r'''
   .
 int age[100];
@@ -111,7 +111,7 @@ int age[100];
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 180,
               child: DartCodeViewer(r'''
   age[0] = 45;
 age[1] = 17;
@@ -133,7 +133,7 @@ age[1] = 17;
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 scanf(“%d”, &age[0]);
 scanf(“%d”, &age[1]);
@@ -149,7 +149,7 @@ scanf(“%d”, &age[2]);
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 150,
+              height: 250,
               child: DartCodeViewer(r'''
 scanf(“%d” &number_of_student);
 
@@ -176,7 +176,7 @@ for(i = 0; i<number_of_student; i++)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 180,
               child: DartCodeViewer(r'''
 for(i = 0; i<number_of_student; i++)
 {
@@ -193,7 +193,7 @@ for(i = 0; i<number_of_student; i++)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 40,
+              height: 120,
               child: DartCodeViewer(r'''
 printf("%d", age[3]);
 
@@ -209,7 +209,7 @@ printf("%d", age[3]);
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 for(i = 1; i<=10; i++)
 {
@@ -229,7 +229,7 @@ for(i = 1; i<=10; i++)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 200,
+              height: 250,
               child: DartCodeViewer(r'''
 for(i = 0; i<number_of_student; i++)
 {

@@ -59,7 +59,7 @@ class _LinkedListState extends State<LinkedList> {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 120,
               child: DartCodeViewer(r'''
 struct blog_post
 {
@@ -109,7 +109,7 @@ struct blog_post
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 120,
               child: DartCodeViewer(r'''
 struct linked_list
 {
@@ -133,7 +133,7 @@ struct linked_list
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 {
 .
@@ -155,7 +155,7 @@ struct linked_list
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 50,
+              height: 100,
               child: DartCodeViewer(r'''
 .
 node *head; //node  head
@@ -173,7 +173,7 @@ head = (node *) malloc(sizeof(node)); //node  assign
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 150,
               child: DartCodeViewer(r'''
 {
     int *a;
@@ -233,7 +233,7 @@ void create(node *myList)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 200,
               child: DartCodeViewer(r'''
 void print(node *myList)
 {
@@ -258,7 +258,7 @@ void print(node *myList)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 150,
               child: DartCodeViewer(r'''
 int countListItem(node *myList)
 {

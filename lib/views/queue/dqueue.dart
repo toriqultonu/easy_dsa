@@ -56,7 +56,7 @@ class DeQueue extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 800,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<bits/stdc++.h>
 

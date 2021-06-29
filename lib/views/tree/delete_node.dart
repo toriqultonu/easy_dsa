@@ -55,7 +55,7 @@ class DeleteNode extends StatelessWidget {
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 80,
+              height: 120,
               child: DartCodeViewer(r'''
 if(currentNode->leftChild == NULL && currentNode->rightChild == NULL)
 currentNode = NULL;
@@ -76,7 +76,7 @@ currentNode = NULL;
             kDescriptionGap,
             Container(
               margin: kSidePadding,
-              height: 100,
+              height: 200,
               child: DartCodeViewer(r'''
 // node has only right child
 if(currentNode->leftChild == NULL)
@@ -172,7 +172,7 @@ node * deleteNode(node *currentNode, int value)
             kTitleGap,
             Container(
               margin: kSidePadding,
-              height: 700,
+              height: 500,
               child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>
