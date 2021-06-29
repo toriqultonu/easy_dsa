@@ -7,6 +7,8 @@ import 'package:easy_dsa/views/home.dart';
 import 'package:easy_dsa/views/linkedList/bidirectional.dart';
 import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
 import 'package:easy_dsa/views/linkedList/createLinkedList.dart';
+import 'package:easy_dsa/views/linkedList/doublyDeletion.dart';
+import 'package:easy_dsa/views/linkedList/doublyInsertion.dart';
 import 'package:easy_dsa/views/linkedList/doublyLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/linkedListView.dart';
 import 'package:easy_dsa/views/linkedList/singlyLinkedList.dart';
@@ -40,6 +42,8 @@ class MyApp extends StatelessWidget {
         CreateLinkedList.id: (context) => CreateLinkedList(),
         SinglyLinkedList.id:(context) => SinglyLinkedList(),
         DoublyLinkedList.id:(context) => DoublyLinkedList(),
+        DoublyInsertion.id:(context) => DoublyInsertion(),
+        DoublyDeletion.id:(context) => DoublyDeletion(),
 
         ///Stack
         StackView.id: (context) => StackView(),

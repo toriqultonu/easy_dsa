@@ -6,8 +6,8 @@ import 'package:easy_dsa/widgets/image_data.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 
-class DoublyLinkedList2 extends StatelessWidget {
-  static String id = 'doublylinkedlist2';
+class DoublyDeletion extends StatelessWidget {
+  static String id = 'doublydeletion';
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class DoublyLinkedList2 extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Doubly Linked List 2',
+          str1: 'Doubly Deletion',
         ),
         centerTitle: true,
         elevation: 0.0,
