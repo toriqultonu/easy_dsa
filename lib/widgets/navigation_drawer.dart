@@ -1,5 +1,6 @@
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/model/data_structure_icons.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavigationDrawer extends StatefulWidget {
@@ -31,8 +32,11 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
               children: [
                 textButton(text: 'Create & Print Linked List', ID: 'createlinkedlist', context: context),
                 textButton(text: 'Insert, Delete & Search Operation', ID: 'singlylinkedlist', context: context),
+                textButton(text: 'Insertion of Doubly Linked List', ID: 'doublyinsertion', context: context),
+                textButton(text: 'Deletion of Doubly Linked List', ID: 'doublydeletion', context: context),
                 textButton(text: 'Doubly Linked List', ID: 'doublylinkedlist', context: context),
                 textButton(text: 'Circular Linked List', ID: 'circularlinkedlist', context: context),
+                textButton(text: 'Doubly Circular Linked List', ID: 'circularlinkedlist2', context: context),
               ],),
               ExpansionTile(title: buildMenuItem(text: "স্ট্যাক (Stack)", icon: DataStructure.stack, context: context, ID: 'stack'),
                 children: [
@@ -46,6 +50,9 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                 children: [
                   textButton(text: 'Application & Classification', ID: 'applicationoftree', context: context),
                   textButton(text: 'Binary Search Tree', ID: 'binarysearchTRee', context: context),
+                  textButton(text: 'Binary Search Tree Traversal', ID: 'treetraversal', context: context),
+                  textButton(text: 'Find max. & min. in BST', ID: 'maxmin', context: context),
+                  textButton(text: 'Delete any node of BST', ID: 'deletenode', context: context),
                 ],),
 
 
@@ -67,7 +74,7 @@ Widget buildMenuItem({String text, IconData icon, context, String ID}){
   return ListTile(
     hoverColor: Colors.white,
     leading: Icon(icon, color: Colors.black87, size: 30,),
-    title: Text(text,style: TextStyle(color: Colors.black54, fontSize: 16),),
+    title: Text(text,style: TextStyle(color: Colors.black54, fontSize: 18),),
     onTap: (){
       Navigator.pop(context);
       Navigator.pop(context);
@@ -82,7 +89,17 @@ Widget textButton({String text, String ID, context}){
     onTap: (){
       Navigator.pushNamed(context, ID);
     },
-    child: Text(text, style: TextStyle(fontSize: kDescriptionFontSize),),
+    child: Container(
+      padding: EdgeInsets.only(left: 40, bottom: 15, top: 10),
+        alignment: Alignment.topLeft,
+        child: Row(
+          children: [
+            Icon(Icons.play_arrow, color: Colors.black54),
+            SizedBox(width: 5,),
+            Expanded(child: Text(text, style: TextStyle(fontSize: kDescriptionFontSize, color: Colors.black54),)),
+          ],
+        )
+    ),
   );
 }
 
