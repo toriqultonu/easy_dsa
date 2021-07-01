@@ -77,7 +77,7 @@ void create(node *myList)
             ),
             kTitleGap,
             ImageViewData(
-              imageLink: 'Images/linkedlist/linkedlist3.png',
+              imageLink: 'Images/linkedlist/linkedlist3.gif',
             ),
             kTitleGap,
             Description(

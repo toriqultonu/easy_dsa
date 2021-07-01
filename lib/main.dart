@@ -4,8 +4,6 @@ import 'package:easy_dsa/views/array/update_array.dart';
 import 'package:easy_dsa/views/compexity/complexityView.dart';
 import 'package:easy_dsa/views/hashTable/hashTableView.dart';
 import 'package:easy_dsa/views/home.dart';
-import 'package:easy_dsa/views/linkedList/bidirectional.dart';
-import 'package:easy_dsa/views/linkedList/binarySearchTree.dart';
 import 'package:easy_dsa/views/linkedList/circularLinkedList.dart';
 import 'package:easy_dsa/views/linkedList/circularLinkedListPart2.dart';
 import 'package:easy_dsa/views/linkedList/createLinkedList.dart';
@@ -79,9 +77,6 @@ class MyApp extends StatelessWidget {
         ///Complexity
         Complexity.id: (context) => Complexity(),
 
-        ///Other
-        BidirectionalList.id: (context) => BidirectionalList(),
-        BinarySearchTree.id: (context) => BinarySearchTree(),
 
       },
     );
