@@ -23,8 +23,8 @@ class _HashTableState extends State<HashTable> {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'হ্যাশ টেবিল',
-          str2: '',
+          str1: 'হ্যাশ ',
+          str2: 'টেবিল',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -453,6 +453,8 @@ bool deleteItem(int key){
             kTitleGap,
             Description(description: 'ডিলিট করার জন্য আমরা অনেকটা সার্চ ফাংশন এর মতই কাজ করেছি। শুধু এই ক্ষেত্রে আমরা ইলিমেন্টটি খুঁজে পেলে vector :: erase() ফাংশনের মাধ্যমে তা ডিলিট করে দিয়েছি।',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -653,6 +655,11 @@ int main()
             ),
             kTitleGap,
             kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+
           ],
         ),
       ),

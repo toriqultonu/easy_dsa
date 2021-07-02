@@ -16,7 +16,8 @@ class TreeTraversal extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Traversal',
+          str1: 'ট্রি',
+          str2: 'Traversal',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -147,6 +148,9 @@ void postOrderPrint(node *rootNode)
             kDescriptionGap,
             Description(description: 'উপরের ট্রির আউটপুটঃ 30 39 38 44 45 41 40 49 70 54 45',),
             kTitleGap,
+
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -319,6 +323,10 @@ void postOrderPrint(node *rootNode)
                 //backgroundColor: kSecondaryThemeColor2,
                 stringStyle: TextStyle(fontSize: 16),),
             ),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

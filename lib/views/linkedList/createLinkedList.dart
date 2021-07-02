@@ -17,7 +17,8 @@ class CreateLinkedList extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Create Linked List',
+          str1: 'Create ',
+          str2: 'Linked List',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -149,6 +150,8 @@ int countListItem(node *myList)
             kTitleGap,
             TileButton(iconData: Icons.play_arrow, buttontitle: 'Insert, Delete & Search Operation', ID: 'singlylinkedlist',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -224,7 +227,10 @@ int countListItem(node *myList)
               ),
             ),
             kTitleGap,
-
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

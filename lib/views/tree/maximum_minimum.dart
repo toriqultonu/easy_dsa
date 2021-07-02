@@ -16,7 +16,8 @@ class MaximumMinimum extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Maximum Minimum',
+          str1: 'Max. Min. of ',
+          str2: 'BST',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -73,6 +74,7 @@ node * findMaxRecursive(node *root)
             kDescriptionGap,
             Description(description: 'lterative way -তে একটা BST এর সর্বনিম্ন সংখ্যা বের করতে হবে।',),
             kTitleGap,
+
             Container(
               margin: kSidePadding,
               height: 200,
@@ -100,6 +102,8 @@ node * findMinIterative(node *root)
             kDescriptionGap,
             Description(description: 'মনে করিয়ে দেয়ার জন্য বলি, এই root কিন্তু ট্রি এর সত্যিকারের রুট না। প্রতিবার লুপ ঘুরাতে কিন্তু এই রুটের মান পরিবর্তন হয়েছে। এটা একটা local variable যার lifetime শুধু এই ফাংশনের ভিতরেই থাকবে। রিটার্ন করার পর main function থেকে নোডের অ্যাড্রেসটা receive করে ঐ অ্যাড্রেসের মাধ্যমে নােডের মানটা প্রিন্ট করতে পারো। আশা করি এটা বুঝতেও কোনা সমস্যা নাই। তুমি এখন maximum সংখ্যাটা বের করার জন্যiterative code লিখে ফেল।',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -299,6 +303,10 @@ void preOrderPrint(node *root)
                 //backgroundColor: kSecondaryThemeColor2,
                 stringStyle: TextStyle(fontSize: 16),),
             ),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

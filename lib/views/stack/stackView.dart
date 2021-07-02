@@ -25,7 +25,7 @@ class _StackViewState extends State<StackView> {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Stack',
+          str1: 'স্ট্যাক',
           str2: '',
         ),
         centerTitle: true,
@@ -203,6 +203,8 @@ class _StackViewState extends State<StackView> {
             Description(description: '* pop() – O(1)',),
             Description(description: '* peek() – O(1)',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -275,6 +277,9 @@ int main()
                 //backgroundColor: kSecondaryThemeColor2,
                 stringStyle: TextStyle(fontSize: 16),),
             ),
+            kHeaderGap,kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

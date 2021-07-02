@@ -24,7 +24,7 @@ class _QueueState extends State<Queue> {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Queue',
+          str1: 'কিউ',
           str2: '',
         ),
         centerTitle: true,
@@ -163,6 +163,8 @@ void dequeue()
             kTitleGap,
             TileButton(iconData: Icons.play_arrow, buttontitle: 'More on Dequeue', ID: 'dequeue',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -231,6 +233,10 @@ int main()
                 //backgroundColor: kSecondaryThemeColor2,
                 stringStyle: TextStyle(fontSize: 16),),
             ),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
-        title: CustomAppBar(str1: 'Data',str2:'Structure'),
+        title: CustomAppBar(str1: 'ডেটা ',str2:'স্ট্যাকচার'),
         centerTitle: true,
         elevation: 0.0,
         actions: [
@@ -65,6 +65,9 @@ class _HomeState extends State<Home> {
             Description(description:'ধর তােমার কোম্পানী তােমাকে কোন একটা ব্যাংকের সার্ভিস সেন্টারের অটোমেশন সফটওয়্যারের কাজ দিল। যেখানে কাস্টমাররা ব্যাংকে ঢুকেই একটা বুথ থেকে তার টোকেন প্রিন্ট করবে। এরপর ৫-৬ বুথ থেকে কাস্টমারদেরকে ডাকবে সার্ভিস দেয়ার জন্য। তাহলে ১৫ জনের পরে যার টোকেন নাম্বার, তাকে ডাকা হবে এই ১৫ জনের পরেই। তার মানে এখানে Queue Data Structure ইমপ্লিমেন্ট করা হচ্ছে। কোন নতুন কাস্টমার টোকেন প্রিন্ট করলেই তার নাম্বারটা কিউতে ফেলে দেয়া হবে। প্রতিটা বুথ থেকে যখনই কাউকে ডাকা হবে এই কিউয়ের সামনে থেকে ডাকা হবে। অর্থাৎ যে আগে আসবে সে কিউয়ের সামনের দিকে থাকবে।',),
             kDescriptionGap,
             Description(description:'এরকম অসংখ্য উদাহরণ দেয়া যায় ডেটা স্ট্রাকচারের প্র্যাক্টিক্যাল বা রিয়েল লাইফ ইমপ্লিমেন্টেশনের। তাই ACM contest, Web development বা মোবাইল ডেভেলপমেন্ট যে দিকেও যাও না কেন। ব্যাসিক ডেটা স্ট্রাকচার জানা থাকা লাগবেই।',),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
             kHeaderGap,
 

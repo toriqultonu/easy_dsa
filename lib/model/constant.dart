@@ -15,7 +15,7 @@ const kTitleFontColor = Colors.white;
 const kDescriptionFontColor = Colors.white;
 
 ///Padding and Line Gap
-const kSidePadding =  EdgeInsets.only(left: 8, right: 8);
+const kSidePadding =  EdgeInsets.only(left: 10, right: 10);
 const kDescriptionGap = SizedBox(height: 10,);
 const kHeaderGap = SizedBox(height: 25,);
 const kTitleGap = SizedBox(height: 15,);

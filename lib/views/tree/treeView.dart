@@ -23,7 +23,7 @@ class _TreeState extends State<Tree> {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Tree',
+          str1: 'ট্রি',
           str2: '',
         ),
         centerTitle: true,
@@ -118,6 +118,10 @@ class _TreeState extends State<Tree> {
             kDescriptionGap,
             Description(description: 'Number of Edges is N-1: কোনো একটা ট্রিতে N সংখ্যক নোড থাকলে তাতে অবশ্যই N-1 সংখ্যক edge থাকবে। যেহেতু কোনাে নাডের একাধিক parent হতে পারে না তাই এই রুলসটা সকল ট্রি এর জন্য সত্য হবে।',),
 
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

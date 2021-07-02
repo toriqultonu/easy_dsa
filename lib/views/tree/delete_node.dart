@@ -16,7 +16,8 @@ class DeleteNode extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Delete Node',
+          str1: 'Delete node of',
+          str2: 'BST',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -170,6 +171,8 @@ node * deleteNode(node *currentNode, int value)
             kDescriptionGap,
             Description(description: 'এই ছিল বিএসটি এর ডিলেট অপারেশন। কোডগুলো অবশ্যই নিজে টাইপ করে রান করবে। তা না হলে কনসেপ্ট ক্লিয়ার হবে না।',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -328,6 +331,11 @@ void preOrderPrint(node *root)
                 stringStyle: TextStyle(fontSize: 16),),
             ),
             kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+
           ],
         ),
       ),

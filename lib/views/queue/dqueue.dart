@@ -15,7 +15,8 @@ class DeQueue extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'DeQueue',
+          str1: 'De',
+          str2: 'Queue',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -34,7 +35,7 @@ class DeQueue extends StatelessWidget {
         child: ListView(
           children: [
             kHeaderGap,
-            DataTitle(title: 'Deque বা Deuble-ended Queue',),
+            DataTitle(title: 'Dequeue বা Double-ended Queue',),
             kTitleGap,
             Description(description: 'তােমরা জেনে গেছ Queue এর ব্যাসিক ধারণা। FIFO - First in First Out এই মূলনীতির উপর ভিত্তি করে কিউ ডেটা স্ট্রাকচার কাজ করে। তােমরা জানাে যে একটা কিউতে নতুন কোন ডেটা ইনসার্ট করতে হলে কিউয়ের শেষে ইনসার্ট করতে হয়। আর কোন ডেটা বের করে নিতে হলে বা প্রসেস করতে হলে কিউয়ের শুরু থেকে বের করতে হয়।',),
             kDescriptionGap,
@@ -54,6 +55,8 @@ class DeQueue extends StatelessWidget {
             kDescriptionGap,
             Description(description: 'কাজের সুবিধার্তে আরাে দুইটা নতুন অপশন যোগ করি। ৪ ইনপুট দিলে পুরো কিউটার আউটপুট দেখাবে। 9 ইনপুট দিলে প্রােগ্রাম exit করবে।',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 500,
@@ -144,7 +147,10 @@ int main()
             kTitleGap,
             Description(description: 'কিউয়ের আগের পর্ব পড়ে বুঝে থাকলে এই পর্ব বুঝতে কোনই সমস্যা হবার কথা নয়। তাই প্রতিটা মেথডের বিস্তারিত আলােচনা আর করলাম না। আশা করি ডিকিউ (আসলে উচ্চারণটা হবে ডেক) বুঝা হয়ে গেছে। কোথাও কনফিউশন থাকলে কমেন্ট করতে ভুলাে না। ও হ্যাঁ! আরেকটা কথা... deque-কে অনেক সময় head-tail linked list-ও বলা হয়ে থাকে।',),
             kHeaderGap,
-
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
           ],
         ),
       ),

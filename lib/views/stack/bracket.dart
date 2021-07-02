@@ -15,7 +15,8 @@ class Bracket extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Bracket Checking',
+          str1: 'Bracket ',
+          str2: 'Balancing',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -82,6 +83,8 @@ class Bracket extends StatelessWidget {
             kDescriptionGap,
             Description(description: 'কখন non-balanced হবে? যখন প্রতিটা ক্লোজিং এর জন্য একটা করে স্টার্টিং থাকবে না। হয় স্টার্টিং একটা বেশি থাকবে, নাইলে কম থাকবে। এই কম-বেশিটা কিভাবে চেক করা হচ্ছে? কোডের দিকে তাকাও। ৪ লাইনের কোড হলেও এর অন্তর্নিহিত (!) কথা অনেক! স্ট্যাক থেকে তখনই কোন একটা এলিমেন্ট মুছে দেয়া হচ্ছে (pop) যখন স্ট্যাকটা খালি নয় এবং স্ট্রিং এর কোন একটা ইন্ডেক্সে &#39;)&#39; পাওয়া গেছে। এই দুটি শর্ত মানলে pop, না মানলে push. আমরা কিন্তু কোডের কোথাও লিখি নাই (&#39; পেলে পুশ করব। তাই যদি স্ট্রিং এ &#39;)&#39; পাওয়া যায় কিন্তু স্ট্যাকটা খালি, সেক্ষেত্রেও স্ট্যাকে &#39;)&#39;-ই পুশ করা হবে। যেহেতু এই একটা ক্যারেক্টার অতিরিক্ত পুশ করা হয়েছে তাই non-balanced string এর ক্ষেত্রে স্ট্যাকটা কখনােই empty হবে না।',),
             kTitleGap,
+            DataTitle(title: 'Full Source Code:',),
+            kDescriptionGap,
             Container(
               margin: kSidePadding,
               height: 300,
@@ -118,6 +121,10 @@ int main()
                 stringStyle: TextStyle(fontSize: 16),),
             ),
 
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
           ],
         ),

@@ -11,7 +11,7 @@ class ImageViewData extends StatelessWidget {
     return Center(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.only(left: 20, right: 20),
+        padding: EdgeInsets.only(left: 15, right: 15),
         child: Image.asset(imageLink, fit: BoxFit.cover,),
       ),
     );

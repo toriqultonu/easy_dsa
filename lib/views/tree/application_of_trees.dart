@@ -15,7 +15,8 @@ class ApplicationOfTree extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Application Of Tree',
+          str1: 'Application Of ',
+          str2: 'Tree',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -102,6 +103,10 @@ class ApplicationOfTree extends StatelessWidget {
             Description(description: '* Huffman Tree',),
             Description(description: '* N-ary Tree',),
             Description(description: '* Suffix Tree',),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
 
             kHeaderGap,
           ],

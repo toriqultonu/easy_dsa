@@ -1,5 +1,6 @@
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/model/data_structure_icons.dart';
+import 'package:easy_dsa/views/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -116,7 +117,7 @@ Widget appHeader({context}){
         //FlutterLogo(size: 40,),
         Image(image: AssetImage('Images/logo_dsa.png'),height: 45, width: 45,),
         SizedBox(width: 10,),
-        Text("ডাটা ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
+        Text("ডেটা ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
         Text("স্ট্রাকচার", style: TextStyle(fontSize: 30,color: Colors.blue, fontWeight: FontWeight.w500),)
       ],
     ),

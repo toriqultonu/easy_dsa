@@ -23,8 +23,8 @@ class _ComplexityState extends State<Complexity> {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'অ্যালগরিদম কমপ্লেক্সিটি',
-          str2: '',
+          str1: 'অ্যালগরিদম ',
+          str2: 'কমপ্লেক্সিটি',
         ),
         centerTitle: true,
         elevation: 0.0,
@@ -203,6 +203,10 @@ int myAlgorithm6(char *s)
             ImageViewData(imageLink: 'Images/complexity/complexity1.png',),
             kTitleGap,
             Description(description: 'কনটেস্টে প্রবলেমের ইনপুট সাইজ দেখে অনেক সময় expected algorithm অনুমান করা যায়। যেমন n=100 হলে সম্ভাবনা আছে এটা একটা n^3 কমপ্লেক্সিটির ডিপি প্রবলেম,বা ম্যাক্সফ্লো-ম্যাচিং প্রবলেম। n=10^5 হলে সাধারণ nlogn কমপ্লেক্সিটিতে প্রবলেম সলভ করতে হয় তাই সম্ভাবনা আছে এটা একটা বাইনারি সার্চ বা সেগমেন্ট ট্রি এর প্রবলেম।',),
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
+            kHeaderGap,
             kHeaderGap,
 
           ],

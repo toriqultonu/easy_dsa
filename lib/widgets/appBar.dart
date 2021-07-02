@@ -13,7 +13,7 @@ class CustomAppBar extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(str1,style: TextStyle(color: Colors.black87, fontSize: 22),),
-        //Text(str2, style: TextStyle(color: Colors.blue , fontSize: 22),)
+        Text(str2, style: TextStyle(color: Colors.blue , fontSize: 22),)
       ],
     );
   }
