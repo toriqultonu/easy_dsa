@@ -1,6 +1,7 @@
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/model/data_structure_icons.dart';
 import 'package:easy_dsa/views/home.dart';
+import 'package:easy_dsa/views/tree/maximum_minimum.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -19,11 +20,13 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
         child: Material(
         color: kPrimaryThemeColor3,
           child: ListView(
+
             children: [
               SizedBox(height: 50,),
               appHeader(context: context),
-              SizedBox(height: 25,),
+              SizedBox(height: 20,),
               Divider(color: Colors.blue, thickness: 1,),
+              buildMenuItem(text: "ডেটা স্ট্যাকচার (DataStructure)", icon: Icons.home_outlined, context: context, ID: 'home'),
               ExpansionTile(title: buildMenuItem(text: "অ্যাারে (Array)", icon: DataStructure.array, context: context, ID: 'array'),
               children: [
                 textButton(text: 'Array Traversing', ID: 'arraytraversing', context: context),
@@ -56,9 +59,6 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                   textButton(text: 'Delete any node of BST', ID: 'deletenode', context: context),
                 ],),
 
-
-
-
               buildMenuItem(text: "হ্যাশটেবিল (HashTable)", icon: DataStructure.hashtable, context: context, ID: 'hashtable'),
               buildMenuItem(text: "কমপ্লেক্সিটি (Complexity)", icon: Icons.access_time, context: context, ID: 'complexity'),
             ]
@@ -74,8 +74,8 @@ Widget buildMenuItem({String text, IconData icon, context, String ID}){
 
   return ListTile(
     hoverColor: Colors.white,
-    leading: Icon(icon, color: Colors.black87, size: 30,),
-    title: Text(text,style: TextStyle(color: Colors.black54, fontSize: 18),),
+    leading: Icon(icon, color: Colors.black54, size: 28,),
+    title: Text(text,style: TextStyle(color: Colors.black54, fontSize: 17),),
     onTap: (){
       Navigator.pop(context);
       Navigator.pop(context);
@@ -111,14 +111,21 @@ Widget appHeader({context}){
       Navigator.pop(context);
       Navigator.pushNamed(context, 'home');
     },
-    child: Row(
+    child: Column(
       children: [
         SizedBox(width: 24,),
         //FlutterLogo(size: 40,),
-        Image(image: AssetImage('Images/logo_dsa.png'),height: 45, width: 45,),
-        SizedBox(width: 10,),
-        Text("ডেটা ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
-        Text("স্ট্রাকচার", style: TextStyle(fontSize: 30,color: Colors.blue, fontWeight: FontWeight.w500),)
+        Image(image: AssetImage('Images/logo_dsa.png'),height: 55, width: 55,),
+        SizedBox(height: 15,),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Easy ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
+            SizedBox(width: 0,),
+            Text("DS", style: TextStyle(fontSize: 30,color: Colors.blue, fontWeight: FontWeight.w500),)
+          ],
+        ),
+
       ],
     ),
   );
