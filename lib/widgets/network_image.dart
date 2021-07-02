@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class NetworkImage extends StatelessWidget {
+class NetworkImagew extends StatelessWidget {
   String imageLink;
 
-  NetworkImage({this.imageLink});
+  NetworkImagew({this.imageLink});
 
   @override
   Widget build(BuildContext context) {

@@ -20,7 +20,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
           child: ListView(
             children: [
               SizedBox(height: 50,),
-              appHeader(),
+              appHeader(context: context),
               SizedBox(height: 25,),
               Divider(color: Colors.blue, thickness: 1,),
               ExpansionTile(title: buildMenuItem(text: "অ্যাারে (Array)", icon: DataStructure.array, context: context, ID: 'array'),
@@ -103,15 +103,22 @@ Widget textButton({String text, String ID, context}){
   );
 }
 
-Widget appHeader(){
-  return Row(
-    children: [
-      SizedBox(width: 24,),
-      //FlutterLogo(size: 40,),
-      Image(image: AssetImage('Images/logo_dsa.png'),height: 45, width: 45,),
-      SizedBox(width: 10,),
-      Text("ডাটা ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
-      Text("স্ট্রাকচার", style: TextStyle(fontSize: 30,color: Colors.blue, fontWeight: FontWeight.w500),)
-    ],
+Widget appHeader({context}){
+  return GestureDetector(
+    onTap: (){
+      Navigator.pop(context);
+      Navigator.pop(context);
+      Navigator.pushNamed(context, 'home');
+    },
+    child: Row(
+      children: [
+        SizedBox(width: 24,),
+        //FlutterLogo(size: 40,),
+        Image(image: AssetImage('Images/logo_dsa.png'),height: 45, width: 45,),
+        SizedBox(width: 10,),
+        Text("ডাটা ",style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500, color: Colors.black87)),
+        Text("স্ট্রাকচার", style: TextStyle(fontSize: 30,color: Colors.blue, fontWeight: FontWeight.w500),)
+      ],
+    ),
   );
 }

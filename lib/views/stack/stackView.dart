@@ -59,6 +59,8 @@ class _StackViewState extends State<StackView> {
             Description(description: '* peek – top element কে read করা',),
             Description(description: '* pop- স্ট্যাকের top এ থাকা ডেটাকে remove করে দেয়া',),
             kTitleGap,
+            ImageViewData(imageLink: 'Images/stack/stack2.gif',),
+            kTitleGap,
             DataTitle(title: 'Applications of Stack Data Structure',),
             kDescriptionGap,
             Description(description: 'সাধারণত আমরা দরকার ছাড়া কোন কাজের কাজ করি না। যেহেতু স্ট্যাক ডেটা স্ট্রাকচার শেখাটা একটা কাজের কাজ তাই প্রথম প্রশ্ন আসবে আমরা কেন এটা শিখব?',),

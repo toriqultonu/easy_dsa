@@ -1,11 +1,7 @@
-import 'package:dart_code_viewer/dart_code_viewer.dart';
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
-import 'package:easy_dsa/widgets/codeView.dart';
 import 'package:easy_dsa/widgets/description.dart';
-import 'package:easy_dsa/widgets/header.dart';
-import 'package:easy_dsa/widgets/image_data.dart';
-import 'package:easy_dsa/widgets/tileButton.dart';
+import 'package:easy_dsa/widgets/network_image.dart';
 import 'package:easy_dsa/widgets/title.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_dsa/widgets/navigation_drawer.dart';
@@ -17,6 +13,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

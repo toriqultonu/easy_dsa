@@ -49,7 +49,7 @@ class _LinkedListState extends State<LinkedList> {
             kTitleGap,
             Description(description: '"A linked list is a linear collection of data elements, called nodes, each pointing to the next node by means of a pointer. It is a data structure consisting of a group of nodes which together represent a sequence." অর্থাৎ লিংকড লিস্ট হচ্ছে কিছু নােডের লিনিয়ার কালেকশন, যেই নোডগুলো একেকটা তার পরেরটাকে পয়েন্টারের মাধ্যমে পয়েন্ট করে। এটা একটা ডেটা স্ট্রাকচার, যেখানে নোডগুলাো একত্রে একটা সিকোয়েন্স তৈরি করে থাকে।',),
             kTitleGap,
-            ImageViewData(imageLink: 'Images/linkedlist/linkedlist2.png',),
+            ImageViewData(imageLink: 'Images/linkedlist/linkedlist2.gif',),
             kTitleGap,
             Description(description: 'মাথার উপর দিয়ে গেল তাই না? গেলে যাক! মূল ব্যাপারটা যেহেতু বুঝেই গেল এত গুরুগম্ভীর আলােচনাকে পাত্তা না দিলেও চলবে।',),
             kDescriptionGap,

@@ -79,7 +79,7 @@ if(head==NULL) return;
             kTitleGap,
             Description(description: 'position যদি 1 না হয় (অর্থাৎ head ছাড়া অন্য কোনো নােডকে ডিলেট করতে চাচ্ছি) তাহলে নিচের স্টেপগুলাে ফলাে করবঃ',),
             kTitleGap,
-            ImageViewData(imageLink: 'Images/linkedlist/linkedlist10.png',),
+            ImageViewData(imageLink: 'Images/linkedlist/linkedlist10.gif',),
             kTitleGap,
             Description(description: '* লুপ চালিয়ে desired position এর নােডটাকে খুঁজে বের করতে হবে।',),
             kDescriptionGap,

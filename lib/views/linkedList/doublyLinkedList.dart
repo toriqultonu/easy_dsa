@@ -40,7 +40,7 @@ class DoublyLinkedList extends StatelessWidget {
             kDescriptionGap,
             Description(description: 'কম্পিউটার সায়েন্সের ভাষায় ডাবলি লিংকড লিস্ট হচ্ছে এক ধরনের linked data structure যেখানে node নামের কিছু রেকর্ড sequentially একটার সাথে আরেকটা connected থাকে। প্রতিটা নোডে এক বা একাধিক data field থাকতে পারে। আর লিস্টের সাথে যুক্ত থাকার জন্য ২ টিlink থাকে, যাদেরকে চিহ্নিত করা যায় next ও previous link নামে। Doubly Linked List এর head node এর previous link হবে NULL. একই ভাবে লিস্টের সর্বশেষ নোডের next link হবে NULL. অর্থাৎ head নােড তার আগের নােড হিসাবে পয়েন্ট করবে NULL-কে। আর tail node (সর্বশেষ নােড) তার পরের নােড হিসাবে পয়েন্ট করবে NULL-কে। এগুলোর মাধ্যমে আমরা লিস্টের শুরু ও শেষ বুঝতে পারব খুব সহজেই।',),
             kTitleGap,
-            ImageViewData(imageLink: 'Images/linkedlist/linkedlist6.png',),
+            ImageViewData(imageLink: 'Images/linkedlist/linkedlist6.gif',),
             kTitleGap,
             DataTitle(title: 'Operations of Doubly Linked List',),
             kDescriptionGap,

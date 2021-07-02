@@ -41,7 +41,7 @@ class MaximumMinimum extends StatelessWidget {
             kDescriptionGap,
             Description(description: 'BST এর properties হচ্ছে এর যে কোনা নােডের left subtree এর সবগুলো নােড হবে ঐ নােডের চেয়ে ছােট বা সমান এবং right subtree এর নোডগুলো হবে বড়। এই বৈশিষ্ট্য থেকে কিন্তু খুব সহজেই বুঝা যায় একদম ছােট মানটা Tree এর কোন পজিশনে থাকবে। যেহেতু বামের নােডগুলাের মান ছােট তাই রুট থেকে যদি ক্রমাগত প্রতিটা নোডের left child এ যেতে থাকি তাহলে সর্বশেষ নােডটার মানই সবচেয়ে ছােট। আর সর্বোচ্চ মানের জন্য যেতে হবে প্রতিটা নােডের ডান right child এ।',),
             kTitleGap,
-            ImageViewData(imageLink: 'Images/tree19.png',),
+            ImageViewData(imageLink: 'Images/tree/tree19.png',),
             kDescriptionGap,
             Description(description: 'উপরের ছবিতে দেখাে। সবচেয়ে ছােট মানটা (30) আছে left most node এ। আর সর্বোচ্চ মান (70) আছে right most node এ। তাই সর্বনিম্ন মান খুঁজার জন্য আমরা recursively বা লুপ চালিয়ে সর্ববামের node এ চলে যাব। আর বড় মান খুঁজার জন্য যাব সর্বডানের node এ।',),
             kTitleGap,

@@ -51,6 +51,8 @@ class _ArrayState extends State<Array> {
         child: ListView(
           children: [
             kTitleGap,
+            ImageViewData(imageLink: 'Images/array/array1.gif',),
+            kTitleGap,
             DataTitle(title: 'Array:',),
             kDescriptionGap,
             Description(description: 'তােমাকে বলা হল ৩ জন ছাত্রের বয়স ইনপুট নিয়ে তাদের গড় বের করতে। তুমি age0, age1, age2 নামের তিনটি int type এর ভ্যারিয়েবল ডিক্লেয়ার করলে। এরপর তাতে ইনপুট নিলে নিচের মত করেঃ এই সিরিজের প্রথম পােস্ট থেকে ইতমধ্যেই তােমরা জেনে গেছ ডেটা স্ট্রাকচার বলতে আসলে কী বুঝায়। আর ডেটা স্ট্রাকচার আমাদের কেনই বা শিখতে হবে? তােমাকে বলা হল ৩ জন ছাত্রের বয়স ইনপুট নিয়ে তাদের গড় বের করতে। তুমি age0, age1, age2 নামের তিনটি int type এর ভ্যারিয়েবল ডিক্লেয়ার করলে। এরপর তাতে ইনপুট নিলে নিচের মত করেঃ'),
