@@ -1,3 +1,4 @@
+import 'package:easy_dsa/model/ad_state.dart';
 import 'package:easy_dsa/views/array/arrayTraversing.dart';
 import 'package:easy_dsa/views/array/arrayView.dart';
 import 'package:easy_dsa/views/array/update_array.dart';
@@ -22,11 +23,21 @@ import 'package:easy_dsa/views/tree/delete_node.dart';
 import 'package:easy_dsa/views/tree/maximum_minimum.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
 import 'package:easy_dsa/views/tree/tree_traversal.dart';
-
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-void main() async {
 
-  runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  final initFuture = MobileAds.instance.initialize();
+  final adState = AdState(initFuture);
+  runApp(
+    //MyApp(),
+    Provider.value(
+      value: adState,
+      builder: (context, child) => MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:dart_code_viewer/dart_code_viewer.dart';
+import 'package:easy_dsa/model/banner_ads.dart';
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
@@ -227,8 +228,6 @@ int countListItem(node *myList)
               ),
             ),
             kTitleGap,
-            kHeaderGap,
-            kHeaderGap,
             kHeaderGap,
             kHeaderGap,
             kHeaderGap,
