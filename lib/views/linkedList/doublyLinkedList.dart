@@ -1,4 +1,5 @@
 import 'package:dart_code_viewer/dart_code_viewer.dart';
+import 'package:easy_dsa/model/banner_ads.dart';
 import 'package:easy_dsa/model/constant.dart';
 import 'package:easy_dsa/widgets/appBar.dart';
 import 'package:easy_dsa/widgets/description.dart';
@@ -34,43 +35,46 @@ class DoublyLinkedList extends StatelessWidget {
       ),
       body: Container(
         color: kSecondaryThemeColor,
-        child: ListView(
+        child: Column(
           children: [
-            kHeaderGap,
-            DataTitle(title: 'Doubly Linked List',),
-            kDescriptionGap,
-            Description(description: 'কম্পিউটার সায়েন্সের ভাষায় ডাবলি লিংকড লিস্ট হচ্ছে এক ধরনের linked data structure যেখানে node নামের কিছু রেকর্ড sequentially একটার সাথে আরেকটা connected থাকে। প্রতিটা নোডে এক বা একাধিক data field থাকতে পারে। আর লিস্টের সাথে যুক্ত থাকার জন্য ২ টিlink থাকে, যাদেরকে চিহ্নিত করা যায় next ও previous link নামে। Doubly Linked List এর head node এর previous link হবে NULL. একই ভাবে লিস্টের সর্বশেষ নোডের next link হবে NULL. অর্থাৎ head নােড তার আগের নােড হিসাবে পয়েন্ট করবে NULL-কে। আর tail node (সর্বশেষ নােড) তার পরের নােড হিসাবে পয়েন্ট করবে NULL-কে। এগুলোর মাধ্যমে আমরা লিস্টের শুরু ও শেষ বুঝতে পারব খুব সহজেই।',),
-            kTitleGap,
-            ImageViewData(imageLink: 'Images/linkedlist/linkedlist6.gif',),
-            kTitleGap,
-            DataTitle(title: 'Operations of Doubly Linked List',),
-            kDescriptionGap,
-            Description(description: 'Singly Linked List এর মতই Doubly Linked List এর অপারেশনগুলো করা যায়। এই পোস্টে শুধুমাত্র ৪ টি অপারেশন দেখানাে হবে। ',),
-            kDescriptionGap,
-            Description(description: '• Insert a node at tail',),
-            Description(description: '• Insert a node at front',),
-            Description(description: '• Traverse doubly linked list forward order',),
-            Description(description: '• Traverse doubly linked list reverse order',),
-            kTitleGap,
-            DataTitle(title: 'Applications of Doubly Linked List',),
-            kDescriptionGap,
-            Description(description: '* Browser এ BACK বাটন ফিচার ইমপ্লিমেন্ট করার সময় কাজে লাগতে পারে',),
-            kDescriptionGap,
-            Description(description: '* কোনাে অ্যাপ্লিকেশনে Most Recently Used ফাইলের লিস্ট দেখানার জন্য ব্যবহৃত হতে পারে',),
-            kTitleGap,
-            DataTitle(title: 'Disadvantage over Singly Linked List',),
-            kDescriptionGap,
-            Description(description: '* প্রতিটা নােডে previous node এর রেফারেন্স স্টোর করার জন্য এক্সট্রা একটা পয়েন্টার রাখতে হয়। এতে মেমরি বেশি খরচ হয়',),
-            kDescriptionGap,
-            Description(description: '* Node এর insert, delete এর ক্ষত্রে next ও previous উভয় পয়েন্টারকেই খেয়াল করে আপডেট করতে হয়।',),
-            kDescriptionGap,
-            kTitleGap,
-            DataTitle(title: 'Define a node of Doubly Linked List',),
-            kTitleGap,
-            Container(
-              margin: kSidePadding,
-              height: 200,
-              child: DartCodeViewer(r'''
+            Expanded(
+              child: ListView(
+                children: [
+                  kHeaderGap,
+                  DataTitle(title: 'Doubly Linked List',),
+                  kDescriptionGap,
+                  Description(description: 'কম্পিউটার সায়েন্সের ভাষায় ডাবলি লিংকড লিস্ট হচ্ছে এক ধরনের linked data structure যেখানে node নামের কিছু রেকর্ড sequentially একটার সাথে আরেকটা connected থাকে। প্রতিটা নোডে এক বা একাধিক data field থাকতে পারে। আর লিস্টের সাথে যুক্ত থাকার জন্য ২ টিlink থাকে, যাদেরকে চিহ্নিত করা যায় next ও previous link নামে। Doubly Linked List এর head node এর previous link হবে NULL. একই ভাবে লিস্টের সর্বশেষ নোডের next link হবে NULL. অর্থাৎ head নােড তার আগের নােড হিসাবে পয়েন্ট করবে NULL-কে। আর tail node (সর্বশেষ নােড) তার পরের নােড হিসাবে পয়েন্ট করবে NULL-কে। এগুলোর মাধ্যমে আমরা লিস্টের শুরু ও শেষ বুঝতে পারব খুব সহজেই।',),
+                  kTitleGap,
+                  ImageViewData(imageLink: 'Images/linkedlist/linkedlist6.gif',),
+                  kTitleGap,
+                  DataTitle(title: 'Operations of Doubly Linked List',),
+                  kDescriptionGap,
+                  Description(description: 'Singly Linked List এর মতই Doubly Linked List এর অপারেশনগুলো করা যায়। এই পোস্টে শুধুমাত্র ৪ টি অপারেশন দেখানাে হবে। ',),
+                  kDescriptionGap,
+                  Description(description: '• Insert a node at tail',),
+                  Description(description: '• Insert a node at front',),
+                  Description(description: '• Traverse doubly linked list forward order',),
+                  Description(description: '• Traverse doubly linked list reverse order',),
+                  kTitleGap,
+                  DataTitle(title: 'Applications of Doubly Linked List',),
+                  kDescriptionGap,
+                  Description(description: '* Browser এ BACK বাটন ফিচার ইমপ্লিমেন্ট করার সময় কাজে লাগতে পারে',),
+                  kDescriptionGap,
+                  Description(description: '* কোনাে অ্যাপ্লিকেশনে Most Recently Used ফাইলের লিস্ট দেখানার জন্য ব্যবহৃত হতে পারে',),
+                  kTitleGap,
+                  DataTitle(title: 'Disadvantage over Singly Linked List',),
+                  kDescriptionGap,
+                  Description(description: '* প্রতিটা নােডে previous node এর রেফারেন্স স্টোর করার জন্য এক্সট্রা একটা পয়েন্টার রাখতে হয়। এতে মেমরি বেশি খরচ হয়',),
+                  kDescriptionGap,
+                  Description(description: '* Node এর insert, delete এর ক্ষত্রে next ও previous উভয় পয়েন্টারকেই খেয়াল করে আপডেট করতে হয়।',),
+                  kDescriptionGap,
+                  kTitleGap,
+                  DataTitle(title: 'Define a node of Doubly Linked List',),
+                  kTitleGap,
+                  Container(
+                    margin: kSidePadding,
+                    height: 200,
+                    child: DartCodeViewer(r'''
 struct linked_list
 {
     int number;
@@ -80,23 +84,23 @@ struct linked_list
 
 typedef struct linked_list node;
 node *head=NULL, *tail=NULL;
-               ''',
-                //backgroundColor: kSecondaryThemeColor2,
-                stringStyle: TextStyle(fontSize: 16),),
-            ),
-            kTitleGap,
-            TileButton(iconData: Icons.play_arrow, buttontitle: 'Insertion of Doubly Linked List', ID: 'doublyinsertion',),
-            kDescriptionGap,
-            TileButton(iconData: Icons.play_arrow, buttontitle: 'Deletion of Doubly Linked List', ID: 'doublydeletion',),
-            kTitleGap,
-            DataTitle(title: 'Print Doubly Linked List Forward',),
-            kDescriptionGap,
-            Description(description: 'Order Loop ঘুরিয়ে পুরাে লিস্ট হেড থেকে print করা শুরু করা হয়েছে। Loop break করছে tail node পাওয়া গেলে।',),
-            kTitleGap,
-            Container(
-              margin: kSidePadding,
-              height: 200,
-              child: DartCodeViewer(r'''
+                     ''',
+                      //backgroundColor: kSecondaryThemeColor2,
+                      stringStyle: TextStyle(fontSize: 16),),
+                  ),
+                  kTitleGap,
+                  TileButton(iconData: Icons.play_arrow, buttontitle: 'Insertion of Doubly Linked List', ID: 'doublyinsertion',),
+                  kDescriptionGap,
+                  TileButton(iconData: Icons.play_arrow, buttontitle: 'Deletion of Doubly Linked List', ID: 'doublydeletion',),
+                  kTitleGap,
+                  DataTitle(title: 'Print Doubly Linked List Forward',),
+                  kDescriptionGap,
+                  Description(description: 'Order Loop ঘুরিয়ে পুরাে লিস্ট হেড থেকে print করা শুরু করা হয়েছে। Loop break করছে tail node পাওয়া গেলে।',),
+                  kTitleGap,
+                  Container(
+                    margin: kSidePadding,
+                    height: 200,
+                    child: DartCodeViewer(r'''
 void printLinkedListForward()
 {
     printf("\nYour updated linked list in FORWARD ORDER:\n");
@@ -106,29 +110,29 @@ void printLinkedListForward()
 
     while(1)
     {
-        if(head==NULL || tail==NULL) break;
+              if(head==NULL || tail==NULL) break;
 
-        printf("%d ", myList->number);
+              printf("%d ", myList->number);
 
-        if(myList==tail) break;
+              if(myList==tail) break;
 
-        myList = myList->next;
+              myList = myList->next;
     }
     puts("\n");
 }
-               ''',
-                //backgroundColor: kSecondaryThemeColor2,
-                stringStyle: TextStyle(fontSize: 16),),
-            ),
-            kTitleGap,
-            DataTitle(title: 'Print Doubly Linked List Reverse Order',),
-            kDescriptionGap,
-            Description(description: 'লিস্টের tail নােড থেকে প্রিন্ট করা শুরু হয়েছে। লিংক করা হচ্ছে previous পয়েন্টারের সাহায্যে। যখন head এর previous pointer এর মান NULL পাওয়া যাবে তখন loop break হবে। আগের ফাংশনের মত এখানেও লুপ ব্রেক করার জন্য if(myList == head) এভাবেও কন্ডিশন চেক করা যায়।',),
-            kTitleGap,
-            Container(
-              margin: kSidePadding,
-              height: 200,
-              child: DartCodeViewer(r'''
+                     ''',
+                      //backgroundColor: kSecondaryThemeColor2,
+                      stringStyle: TextStyle(fontSize: 16),),
+                  ),
+                  kTitleGap,
+                  DataTitle(title: 'Print Doubly Linked List Reverse Order',),
+                  kDescriptionGap,
+                  Description(description: 'লিস্টের tail নােড থেকে প্রিন্ট করা শুরু হয়েছে। লিংক করা হচ্ছে previous পয়েন্টারের সাহায্যে। যখন head এর previous pointer এর মান NULL পাওয়া যাবে তখন loop break হবে। আগের ফাংশনের মত এখানেও লুপ ব্রেক করার জন্য if(myList == head) এভাবেও কন্ডিশন চেক করা যায়।',),
+                  kTitleGap,
+                  Container(
+                    margin: kSidePadding,
+                    height: 200,
+                    child: DartCodeViewer(r'''
 void printLinkedListBackward()
 {
     printf("\nYour full linked list in REVERSE ORDER:\n");
@@ -138,27 +142,27 @@ void printLinkedListBackward()
 
     while(1)
     {
-        if(head==NULL || tail==NULL) break;
+              if(head==NULL || tail==NULL) break;
 
-        printf("%d ", myList->number);
+              printf("%d ", myList->number);
 
-        if(myList->previous==NULL) break;
+              if(myList->previous==NULL) break;
 
-        myList = myList->previous;
+              myList = myList->previous;
     }
     puts("\n");
 }
-               ''',
-                //backgroundColor: kSecondaryThemeColor2,
-                stringStyle: TextStyle(fontSize: 16),),
-            ),
-            kTitleGap,
-            DataTitle(title: 'Full Source Code:',),
-            kDescriptionGap,
-            Container(
-              margin: kSidePadding,
-              height: 500,
-              child: DartCodeViewer(r'''
+                     ''',
+                      //backgroundColor: kSecondaryThemeColor2,
+                      stringStyle: TextStyle(fontSize: 16),),
+                  ),
+                  kTitleGap,
+                  DataTitle(title: 'Full Source Code:',),
+                  kDescriptionGap,
+                  Container(
+                    margin: kSidePadding,
+                    height: 500,
+                    child: DartCodeViewer(r'''
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -255,9 +259,9 @@ void insert_at_tail(int value)
 
     if(head==NULL) //For the 1st element
     {
-        head=newNode;
-        tail=newNode;
-        return;
+              head=newNode;
+              tail=newNode;
+              return;
     }
 
     //'tail' is a global node. 'newNode' will be the next node of tail.
@@ -275,11 +279,11 @@ void insert_at_first(int value)
 
     if(head==NULL) //For the 1st element
     {
-        //For now, newNode is the only one node of list
-        //So it it is head and also tail
-        head=newNode;
-        tail=newNode;
-        return;
+              //For now, newNode is the only one node of list
+              //So it it is head and also tail
+              head=newNode;
+              tail=newNode;
+              return;
     }
 
     //newNode will be the NEW HEAD of list.
@@ -296,11 +300,11 @@ void insert_at_middle(int value, int position)
 
     if(head==NULL) //For the 1st element
     {
-        //For now, newNode is the only one node of list
-        //So it it is head and also tail
-        head=newNode;
-        tail=newNode;
-        return;
+              //For now, newNode is the only one node of list
+              //So it it is head and also tail
+              head=newNode;
+              tail=newNode;
+              return;
     }
 
     node *temp = (node *) malloc(sizeof(node));
@@ -309,15 +313,15 @@ void insert_at_middle(int value, int position)
 
     //find the position where our newNode will put
     while((i < position-1) && temp->next!=NULL){
-        temp = temp->next;
-        i++;
+              temp = temp->next;
+              i++;
     }
 
     newNode->next = temp->next; //newNode's next node will be the next node of temp
     newNode->previous = temp; //newNode's previous node will be the temp node
 
     if(temp->next)
-        temp->next->previous = newNode; //newNode will be the previous node of temp->next node
+              temp->next->previous = newNode; //newNode will be the previous node of temp->next node
 
     temp->next = newNode; //update the next node of temp
 }
@@ -331,13 +335,13 @@ void printLinkedListForward()
 
     while(1)
     {
-        if(head==NULL || tail==NULL) break;
+              if(head==NULL || tail==NULL) break;
 
-        printf("%d ", myList->number);
+              printf("%d ", myList->number);
 
-        if(myList==tail) break;
+              if(myList==tail) break;
 
-        myList = myList->next;
+              myList = myList->next;
     }
     puts("\n");
 }
@@ -351,26 +355,27 @@ void printLinkedListBackward()
 
     while(1)
     {
-        if(head==NULL || tail==NULL) break;
+              if(head==NULL || tail==NULL) break;
 
-        printf("%d ", myList->number);
+              printf("%d ", myList->number);
 
-        if(myList->previous==NULL) break;
+              if(myList->previous==NULL) break;
 
-        myList = myList->previous;
+              myList = myList->previous;
     }
     puts("\n");
 }
-               ''',
-                //backgroundColor: kSecondaryThemeColor2,
-                stringStyle: TextStyle(fontSize: 16),),
-            ),
-            kHeaderGap,
-            kHeaderGap,
-            kHeaderGap,
-            kHeaderGap,
-            kHeaderGap,
+                     ''',
+                      //backgroundColor: kSecondaryThemeColor2,
+                      stringStyle: TextStyle(fontSize: 16),),
+                  ),
+                  kHeaderGap,
+                  kHeaderGap,
 
+                ],
+              ),
+            ),
+            BannerADS(),
           ],
         ),
       ),
