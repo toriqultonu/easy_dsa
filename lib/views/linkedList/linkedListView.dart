@@ -210,7 +210,7 @@ head = (node *) malloc(sizeof(node)); //node  assign
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

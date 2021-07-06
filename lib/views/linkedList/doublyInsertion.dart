@@ -168,7 +168,7 @@ void insert_at_middle(int value, int position)
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
 
           ],
         ),

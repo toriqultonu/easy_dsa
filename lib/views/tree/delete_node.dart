@@ -17,7 +17,7 @@ class DeleteNode extends StatelessWidget {
         iconTheme: IconThemeData(color: kAppBarIconColor),
         backgroundColor: kPrimaryThemeColor3,
         title: CustomAppBar(
-          str1: 'Delete node of',
+          str1: 'Delete node of ',
           str2: 'BST',
         ),
         centerTitle: true,
@@ -341,7 +341,7 @@ void preOrderPrint(node *root)
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

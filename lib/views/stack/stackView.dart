@@ -287,7 +287,7 @@ int main()
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

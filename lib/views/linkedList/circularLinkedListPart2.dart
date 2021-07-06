@@ -678,7 +678,7 @@ int getListLength()
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

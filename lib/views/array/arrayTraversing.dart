@@ -122,7 +122,7 @@ printf(“%d”, average);
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

@@ -3,13 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:easy_dsa/model/ad_state.dart';
 
-class BannerADS extends StatefulWidget {
+class BannerAdsWidgets extends StatefulWidget {
 
   @override
-  _BannerADSState createState() => _BannerADSState();
+  _BannerAdsWidgetsState createState() => _BannerAdsWidgetsState();
 }
 
-class _BannerADSState extends State<BannerADS> {
+class _BannerAdsWidgetsState extends State<BannerAdsWidgets> {
 
   BannerAd banner;
 
@@ -20,9 +20,24 @@ class _BannerADSState extends State<BannerADS> {
     adState.initialization.then((status){
       setState(() {
         banner = BannerAd(
-          adUnitId: BannerAd.testAdUnitId,
+          adUnitId: adState.bannerAdUnitId,
+          //adUnitId: BannerAd.testAdUnitId,
           size: AdSize.banner,
           request: AdRequest(),
+          listener: BannerAdListener(
+            onAdLoaded: (Ad ad) {
+              print('$BannerAd loaded.');
+              setState(() {
+                banner = ad as BannerAd;
+              });
+            },
+            onAdFailedToLoad: (Ad ad, LoadAdError error) {
+              print('$BannerAd failedToLoad: $error');
+              ad.dispose();
+            },
+            onAdOpened: (Ad ad) => print('$BannerAd onAdOpened.'),
+            onAdClosed: (Ad ad) => print('$BannerAd onAdClosed.'),
+          ),
         )..load();
       });
     });

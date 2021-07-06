@@ -236,7 +236,7 @@ int countListItem(node *myList)
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),

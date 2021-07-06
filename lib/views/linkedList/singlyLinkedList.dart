@@ -507,7 +507,7 @@ void print_linked_list()
                 ],
               ),
             ),
-            BannerADS(),
+            BannerAdsWidgets(),
           ],
         ),
       ),
