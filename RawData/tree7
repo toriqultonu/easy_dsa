@@ -1,0 +1,324 @@
+
+Checking: Is it a BST or Not?
+
+উপরের ছবিটা একটা BST. নিচের ছবিটাও কি BST? নিচের ছবিতে root 47 এর right child এর মান বসানাে হয়েছে 62. বাইনারি সার্চ ট্রি এর সংজ্ঞা থেকে আমরা জানি যে এর যে কোনো নোডের left subtree হবে ঐ নােডের মানের চেয়ে ছোট বা সমান আর right subtree হবে ঐ নােডের মানের চেয়ে বড়।
+
+কোড করা ছাড়া তুমিই বল একটা বাইনারি ট্রিকে কোন কোন লজিকের ভিত্তিতে বাইনারি সার্চ ট্রি বলতে পারব?
+
+একটা সমাধান মাথায় আসতে পারে প্রথমেই। প্রতিটা নােডের left child হবে ছোট বা সমান আর right child হবে বড়। তাহলে পুরো ট্রি এর মধ্যে একটা রিকার্সিভ ফাংশন কল করে সহজেই এই চেকটা করতে পারি। যেই নােডেই ট্রাভার্স করব, চেক করব যে তার বামের চাইল্ড ছোট বা সমান কিনা আর ডানের চাইল্ড বড় কিনা। সবগুলাে নােডের ক্ষেত্রে এই শর্ত দুটি পূরণ করলে তাকে আমরা BST বলব। তাহলে চলাে দেখি এই লজিকটা দ্বিতীয় ছবির ক্ষেত্রে কাজ করে কিনা।
+
+প্রথমে 47 থেকে শুরু করি। এর left child হচ্ছে 40 আর right child 62. তার মানে রুটের জন্য শর্ত দুটি ঠিক আছে। এরপর 40 এর left ও right child যথাক্রমে 38 ও 43. তার মানে 40 ও আমাদের শর্ত পূরণ করেছে। এভাবে করে তুমি ট্রি এর বাকি নােডগুলাে চেক করাে। দেখবে সবগুলা নােডের left child ঐ নােডের মানের চেয়ে ছােট বা সমান এবং right child এর মান বড়। অতএব তুমি জাতির উদ্দেশ্যে ঘােষণা দিয়ে দিলে যে &#34;৪২০ ধারা মোতাবেক সন্দেহাতীত ভাবে প্রমাণিত হইয়াছে যে, ইহা একটা বিএসটি!&#34; রায় ঘােষণার পরে দেখলা শাহবাগ মােড়ে প্রােগ্রামাররা জটলা পাকাচ্ছে। তােমার চামড়া-টামড়া তুলে নেয়া সংক্রান্ত টুকটাক স্লোগান দেয়া হচ্ছে। ব্যাপারটা তাহলে কী ঘটল? এই লজিক কি ঠিক নাই? তাহলে আসাে আবার একটু দেখি গ্যাঞ্জামটা কোথায়।
+
+সংজ্ঞায় বলা ছিল প্রতিটা নােডের left subtree হবে ছোেট বা সমান আর right subtree হবে বড়। কিন্তু শর্টকাট মারতে গিয়ে আমরা left subtree এর জায়গায় চেক করেছি।left child. এতে সমস্যা কী? দেখাে 62 নােডের left ও right child এর মান ঠিকঠাকই আছে। 70 এর left এ তার চেয়ে ছোট মান আছে 59। কিন্তু এই 59 আবার 62 এর চেয়ে ছোট। 62 এর right subtree এর প্রতিটা মান হতে হবে 62 এর চেয়ে বড়। কিন্তু এখানে পাওয়া যাচ্ছে ছোেট। তাহলে তাে এটা BST এর সংজ্ঞা অনুযায়ী হল না। যেহেতু 62 এর right subtree এর প্রতিটা নােডের মান 62 এর চেয়ে বড় না অতএব এই বাইনারি ট্রি-কে তুমি বাইনারি সার্চ ট্রি বলতে পারবা না। তার মানে বুঝা যাচ্ছে 420 ধারা মােতাবেক যেই রায়টা দিছাে সেই ধারাটাই আসলে ঠিক নাই। চলাে ধারাটাকে সংশােধন করি!
+
+কয়েক ভাবেই এই চেকটা করা যায়। সেগুলো নিচে পর্যায়ক্রমে উল্লেখ করা হল।
+
+An Inefficient Approach: Check subtree of every node
+
+আগের প্রসেসে প্রতিটা নােডের left ও right child কে চেক করেছিলাম। চেকটা আসলে করতে হবে left subtree ও right subtree নিয়ে। কোনাে একটা নােডের left subtree এর সবগুলো নোডের মান ছােট বা সমান কিনা এটা একটু ভিন্ন ভাবে চিন্তা করে বের করা যায়। ধরাে রুট 47 এর left subtree এর ক্ষেত্রে চেক করতে চাই। তাহলে আমরা যদি left subtree এর maximum value টা বের করি। এরপর চেক করি এটা 47 এর চেয়ে ছোট কিনা তাহলেই কিন্তু আমরা বুঝে যাব 47 এর বাম পাশের বংশধরদের মধ্যে কেউ এর চেয়ে বড় কিনা। 47 এর left subtree এর maximum value-ই যদি 47 এর চেয়ে ছােট (বা সমান) হয় তাহলে এটা "সন্দেহাতীত ভাবে প্রমাণিত হয় যে বাম সাবট্রিতে 47 এর চেয়ে বড় কোনাে মান নাই!" সুন্দর না আইডিয়াটা?
+
+একই ভাবে 47 এর right subtree এর minimum value টা বের করব। এরপর দেখব এই মানটা 47 এর চেয়ে বড় কিনা। আমাদের শর্ত হচ্ছে right subtree এর মানগুলো অবশ্যই 47 এর চেয়ে বড় হতে হবে। তাে, right subtree এর minimum value-টাই যদি 47 এর চেয়ে বড় হয় এর মানে বাকি সবগুলাে মান অবশ্যই 47 এর চেয়ে বড়। যদি এই দুইটা শর্ত প্রতিটা নােডের ক্ষেতত্রেই সত্য হয় তাহলে ট্রিকে BST বলা যাবে।
+
+int isItBst(node *root) //Not efficient way
+{
+    if(root==NULL) return 1;
+
+    if(root->leftChild!=NULL && findMax(root->leftChild) > root->number)
+        return 0;
+    if(root->rightChild!=NULL && findMin(root->rightChild) < root->number)
+        return 0;
+    if(!isItBst(root->leftChild) || !isItBst(root->rightChild))
+        return 0;
+
+    return 1;
+}
+
+শর্তগুলাে একটু উল্টিয়ে চেক করা হচ্ছে এই কোডে। আমাদের দরকার বামের সাবট্রি এর সর্বোচ্চ মান নােডের মানের চেয়ে ছােট কিনা। ৫ নাম্বার লাইনে চেক করছি সর্বোচ্চ মানটা নােডের মানের চেয়ে বড় কিনা। যদি বড় হয় তার মানে কিন্তু এটা BST না। তাই return 0; করা হয়েছে। ৭ নাম্বার লাইনে চেক করা হচ্ছে ডানের সাবট্রি এর সর্বনিম্ন মান নাডের মানের চেয়ে ছোট কিনা। যদি ছোট হয় তার মানে এটা বিএসটি এর শর্ত পূরণ করছে না। এক্ষেত্রেও return করা হচ্ছে 0. ৫ ও ৭ নাম্বার লাইনের মাধ্যমে চেক করা হচ্ছে এই নােডটা যেই সাবট্রি এর রুট হিসাবে কাজ করছে সেটা BST কিনা। একই ভাবে এই সাবট্রি এর অন্যান্য নােডের ক্ষেত্রেও চেক করতে হবে যে প্রতিটা নাড যেই সাবট্রি এর রুট সেই সাবট্রিটা BST কিনা। তাই ৯ নাম্বার লাইনে রিকার্সিভ কল করা হচ্ছে। এখানেও উল্টিয়ে চেক করা হচ্ছে। তাই IF এর মান সত্য হলে রিটার্ন করবে 0. উপরের ৩ টা IF এর যে কোনাে একটা সত্য হলে ফাংশনটা 0 রিটার্ন করে দিবে। অর্থাৎ এই ফাংশনের কাজ শেষ। আমরা সিদ্ধান্ত নিয়ে নিব যে এটা BST না। কিন্তু ৩ টা IF-ই মিথ্যা হলে ১২ নাম্বার লাইনে রিটার্ন করবে 1.
+
+Complexity: এভাবে প্রতিটা নােডের জন্য তাদের সাবট্রি দুইটি চেক করা হবে। তাই এই প্রসেসটা খুব একটা efficient না। এই অ্যালগরিদমের time complexity হচ্ছে O(n°). এখানে n হচ্ছে নােডের সংখ্যা। অর্থাৎ ১০ টা নােড বিশিষ্ট একটা বাইনারি ট্রি এর ক্ষেত্রে ১০০ টা iteration দরকার হবে।
+
+An efficient way to check if a Binary Tree is BST or Not: Checking with range
+
+উপরের পদ্ধতিতে আমরা চিন্তা করছিলাম প্রতিটা নােডের বাচ্চাকাচ্চাদের নিয়ে। এই পদ্ধতিতে বাচ্চাকাচ্চা নিয়ে কাজ করব না। প্রতিটা নোডের parent নিয়ে কাজ করব। নিচের ছবিটা দেখােঃ
+
+প্রতিটা নােডের উপরে লিখে দেয়া আছে ঐ নোডের lower limit ও upper limit. অর্থাৎ ট্রি টি বাইনারি সার্চ ট্রি হতে হলে নােডের মানগুলাে হতে হবে এই লিমিটের মধ্যে। যদি প্রতিটা নােড তার parent, grand parent-দের সাথে সম্পর্কিত এই রেঞ্জের মধ্যে (exclusively) থাকে তাহলে এটা হবে Binary Search Tree. শুরুতে root 47 নিয়ে কাজ করব। এর কোনাে parent নাই তাই এর মানের কোনাে নির্দিষ্ট রেঞ্জ নাই। এজন্য এর লিমিট দেয়া হয়েছে minus infinity থেকে plus infinity পর্যন্ত। অর্থাৎ যত ছােট হােক বা যতই বড় হােক root node সর্বদা valid.
+
+এরপর যাই root এর left child 40 এর কাছে। 40 যেহেতু 47 এর left child তাই একে অবশ্যই 47 এর চেয়ে ছােট হতে হবে (বুঝার সুবিধার জন্য মনে করাে এই ট্রিতে কোনাে duplicate value নাই। এতে করে left child অবশ্যই ছােট হবে। সমান হবে না)। 40 এর জন্য কিন্তু শর্ত একটাই, তা হচ্ছে। 47 এর চেয়ে ছােট হতে হবে। কত ছােট হতে পারবে? এটার কিন্তু কোনাে লিমিট নাই। মানে minus infinity থেকে 47 এর মধ্যের যে কোনো মানই হতে পারে। কিন্তু 47 এর left child এ এসে যদি 47 এর চেয়ে বড় মান পাওয়া যায় তাহলে সিদ্ধান্ত নিতে পারব যে এটা BST নয়।
+
+এরপর ধরাে 40 এর right child 43 এর কাছে গেলাম। যেহেতু right child তাই অবশ্যই একে 40 এর চেয়ে বড় হতে হবে। তাই এই চাইল্ডের lower limit হচ্ছে 40. তাহলে এর upper limit কত হবে? যত বড় ইচ্ছা সংখ্যা এই নােডে বসালেও এটা BST থাকবে? 43 না থেকে এখানে যদি 100 বসাই তাহলে কী সমস্যা হত? 100 বসালে সেটা আমাদের রুট 47 এর চেয়ে বড় হয়ে যাচ্ছে। আমরা কাজ করছি রুটের left subtree ত। এপাশে তাে রুটের চেয়ে বড় মান নেয়া যাবে না। তাই 43 এর upper limit zA GE parent 97 upper limit 47.
+
+বাকি নােডগুলাের লিমিট নিজে নিজে হিসাব করাে। মনে রাখার জন্য এভাবে চিন্তা করতে পারাে যেঃ
+
+* কোনাে parent নােডের right child এর lower limit এর মান হবে parent এর মান। আর upper limit &lt; parent 43 upper limit 43 এর মান।
+
+* কোনাে parent নােডের left child এর lower limit হবে parent এর lower limit এর মান। আর upper limit হবে parent এর মান।
+
+এই সিসটেমে যখন পুরাে ট্রিটা ট্রাভার্স করে right subtree এর 59 এ পৌঁছাবে তখন দেখা যাবে 59 তার lower limit এর চেয়ে ছােট হয়ে গেছে। এই নােডের রেঞ্জ হচ্ছে 62 ও 72 এর মাঝের যে কোনাে নাম্বার। কিন্তু নােডে আছে 59. পুরাে ট্রি এর সকল নােডই রেঞ্জের মধ্যে আছে শুধু এটা ছাড়া। সুতরাং এটা বাইনারি সার্চ ট্রি নয়।
+
+int isBst(node *root, int minimum, int maximum)
+{
+    if(root==NULL) return 1;
+
+    if((root->number>= minimum && root->number < maximum) 
+        && isBst(root->leftChild, minimum, root->number)
+        && isBst(root->rightChild, root->number, maximum))
+        return 1;
+
+    return 0;
+}
+
+এত্ত এত্ত কাজ হচ্ছে কিন্তু দেখাে কোডটা কত্ত ছােট্ট আর নিষ্পাপ! Minimum হচ্ছে সংশ্লিষ্ট নাডের lower limit এবং maximum হচ্ছে upper limit. প্রথমে কল করার সময় প্যারামিটারে Tree এর রুটের অ্যাড্রেস পাঠাতে হবে। সাথে পাঠাতে হবে একটা অনেক ছোট মান আর অনেক বড় একটা মান। তােমার ট্রিতে যেই রেঞ্জের মান নিয়ে কাজ করা লাগতে পারে এই দুটি মান হবে সেই রেঞ্জের চেয়ে ছােট ও বড়। যদি তােমাকে বলে দেয় তামার ট্রিতে সব সময় ১ থেকে ১০০ পর্যন্ত মান থাকবে। তাহলে minimum হিসেবে ০ আর maximum হিসাবে 101 পাঠাতে পার।
+
+৫ নাম্বার লাইনে চেক করা হচ্ছে নোডের number টা minimum এর চেয়ে বড় বা সমান কিনা। ছবিতে সমান কিনা সেটা হ্যান্ডেল করা হয় নাই। কিন্তু এই কোড duplicate node থাকলে সেটাকেও handle করতে পারবে। একই সাথে চেক হচ্ছে number টা maximum এর চেয়ে ছোট কিনা। এই দুইটা শর্ত সত্য হবার অর্থ হচ্ছে নােডের মানটা নির্দিষ্ট রেঞ্জের মধ্যে আছে। এরপর এই নোডের left child ও right child এর জন্য একই ফাংশন কল করা হচ্ছে। এভাবে পুরোে ট্রিটা ঘুরে আসার সময় প্রতিবার ফাংশন কলেই যদি IF এর শর্তগুলো সত্য হয় তাহলে main function এর কাছে 1 রিটার্ন হবে। আর কোনাে একটা শর্ত মিথ্যা হলে হলে ১০ নাম্বার লাইনের ০ রিটার্ন করবে। main function থেকে তােমাকে চেক করতে হবে রিটার্ন করা মানটা ০ নাকি 1. এর উপর ভিত্তি করে আউটপুট দেখাতে পারাে বা পরবর্তী প্রসেস চালাতে পারাে।
+
+Complexity: পুরা ট্রি ট্রাভার্স করার টাইম কমপ্লক্সিটিই এই অ্যালগরিদমের টাইম কমপ্লেক্সিটি। অর্থাৎ O(n). যে কটি নােড থাকবে ততটি iteration প্রয়োজন হবে। যা আগের পদ্ধতির চেয়ে অনেক ভাল। এই অ্যালগরিদমের ক্ষেত্রে প্রতিটা নোডে একবারই ভিজিট করতে হচ্ছে। কিন্তু আগের পদ্ধতিতে 44 এর কথা চিন্তা কর। রুট যখন left subtree এর জন্য কল দিয়েছে তখন থেকে 44 ভিজিট হচ্ছে। এর parent, grand parent সবার জন্যেই 44 কে ভিজিট করতে হয়েছে। তাই টাইম কমপ্লেক্সিটি ছিল বেশি।
+
+Another Approach to check BST: In-order Traversal of Tree
+
+আগের পর্বে Tree traversal এর তিনটা পদ্ধতি নিয়ে আলোচনা করা হয়েছে। সেখানে একটা পদ্ধতি ছিল In-order traversal. এই নতুন অ্যাপ্রোচের ক্ষেত্রে এই পদ্ধতির ট্রাভার্সালটা দরকার হবে।
+
+আগের পর্বগুলা পড়ে প্র্যাক্টিস করে থাকলে in-order traversal তুমি জানো। পােস্টের উদাহরণে দেখিয়েছিলাম নােডগুলাতে ট্রাভার্স করে মান প্রিন্ট করে দিতে। এখন তােমাকে প্রিন্ট করতে হবে না। তােমাকে যেটা করতে হবে তা হচ্ছে in-order basis এ ট্রাভার্স করে মানগুলাে একটা array তে ঢুকিয়ে দেয়া। সবগুলাে নােডের মান অ্যারেতে ঢোকানাে শেষ হলে চেক করবা এই অ্যারেটা ascending order এ sorted আছে কিনা। যদি এটা সর্টেড থাকে তাহলে এটা একটা BST অন্যথায় BST নয়!
+
+এটার কোড তুমি নিজেই করতে পারবা। তাই আর দেখাচ্ছি না।
+
+Complexity: ট্রাভার্স করার জন্য time complexity হচ্ছে O(n). আর অ্যারেতে সেভ করার জন্য extra space complexity O(n). Array sorted কিনা সেটা চেক করার জন্য লুপ ঘুরাতে হবে। MRITae time complexity O(n).
+
+এই অ্যালগরিদমের কমপ্লেক্সিটি আরাে কমানো যায়। নিচের ফাংশনটা দেখঃ
+
+int isBstInOrderTraversal(node *root, int previous)
+{
+    if(root==NULL) return 1; //Base case
+
+    if(!isBstInOrderTraversal(root->leftChild, previous))
+        return 0;
+
+    if(root->number < previous)
+        return 0;
+
+    previous = root->number;
+
+    return isBstInOrderTraversal(root->rightChild, previous);
+}
+
+Main function থেকে যখন একে কল করা হবে তখন প্যারামিটার হিসাবে পাঠাতে হবে ট্রি এর রুট আর একটা অনেক ছােট মান (যেটা ট্রিতে স্বাভাবিক ভাবে থাকার কথা না)। কোাডটা দেখাে, সােজা- সাপটা In-order traversal হয়েছে। previous ভ্যারিয়েবলে নোডের মানটা স্টার করা হচ্ছে যা পরের রিকার্সিভ কলে পাঠানাে হচ্ছে। যদি পুরো ট্রি ট্রাভার্স করতে গিয়ে কোনা একটা নাডের মান previous এর চেয়ে ছােট হয়ে যায় তাহলে ৯ নাম্বার লাইনের মাধ্যমে 0 রিটার্ন করবে। অন্যথায় finally main function এর কাছে 1 রিটার্ন করা হবে। ফলে আলাদা ভাবে অ্যারে নিয়ে কাজ করার খরচ বেঁচে গেল। টাইম কমপ্লেক্সিটি দাঁড়ালো O(n). আর রিকার্সিভ কলের stack এর জন্য স্বাভাবিক ভাবেই space complexity O(n).
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+
+typedef struct bst
+{
+    int number;
+    struct bst *leftChild;
+    struct bst *rightChild;
+
+} node;
+
+node *root = NULL;
+
+void insertNode(int value);
+void inOrderPrint(node *root);
+int isItBst(node *root);
+int isItBst_fast(node *root);
+int isBstHelper(node *root, int minimum, int maximum);
+int isBstInOrderTraversal(node *root, int previous);
+int findMin(node *root);
+int findMax(node *root);
+
+int main()
+{
+    int addingItem;
+    int previous = INT_MIN;
+    //Create a BST using: 47 40 54 38 43 49 39 45 44 30 41 70 46 59
+    //In-order output:   30 38 39 40 41 43 44 45 46 47 49 54 59 70
+    insertNode(47);    insertNode(40);    insertNode(54);
+    insertNode(38);    insertNode(43);    insertNode(49);
+    insertNode(39);    insertNode(45);    insertNode(44);
+    insertNode(30);    insertNode(41);    insertNode(70);
+    insertNode(46);    insertNode(59);
+
+
+    //In-order output:   30 38 39 40 41 43 44 45 46 47 49 54 59 70
+    printf("\nIn-Order Tree printing:\n");
+    inOrderPrint(root);
+    puts("");
+
+
+    if(isItBst(root)==1)
+        printf("\nSlower Approach:\nYes, it is BST!\n");
+    else
+        printf("\nSlower Approach:\nNo, it is not BST\n");
+
+    addingItem = 62;
+    root->rightChild->number = addingItem;
+
+
+    //In-order output:   30 38 39 40 41 43 44 45 46 47 49 62 59 70
+    printf("\nAfter adding %d as a right child of root.\nIn-Order Tree printing:\n", addingItem);
+    inOrderPrint(root);
+    puts("");
+
+    if(isItBst_fast(root)==1)
+        printf("\nFaster Approach:\nYes, it is BST!\n");
+    else
+        printf("\nFaster Approach:\nNo, it is not BST\n");
+
+
+    addingItem = 54;
+    root->rightChild->number = addingItem;
+
+
+    //In-order output:   30 38 39 40 41 43 44 45 46 47 49 54 59 70
+    printf("\nAfter adding %d as a right child of root.\nIn-Order Tree printing:\n", addingItem);
+    inOrderPrint(root);
+    puts("");
+
+
+    if(isBstInOrderTraversal(root, previous)==1)
+        printf("\nIn-order traversal Approach:\nYes, it is BST!\n");
+    else
+        printf("\nIn-order traversal Approach:\nNo, it is not BST\n");
+
+
+    return 0;
+}
+
+
+int isItBst_fast(node *root) //Faster way
+{
+    return (isBstHelper(root, INT_MIN, INT_MAX));
+}
+
+int isBstHelper(node *root, int minimum, int maximum)
+{
+    if(root==NULL)  return 1;
+
+    if((root->number>= minimum && root->number < maximum)
+        && isBstHelper(root->leftChild, minimum, root->number)
+        && isBstHelper(root->rightChild, root->number, maximum))
+        return 1;
+
+    return 0;
+
+    //Same logic but another way
+    /*
+    if(!(root->number>= minimum && root->number < maximum))
+        return 0;
+    if(!isBstHelper(root->leftChild, minimum, root->number))
+        return 0;
+    if(!isBstHelper(root->rightChild, root->number, maximum))
+        return 0;
+
+    return 1;
+    */
+}
+
+
+int isItBst(node *root) //Not efficient way
+{
+    if(root==NULL) return 1;
+
+    if(root->leftChild!=NULL && findMax(root->leftChild) > root->number)
+        return 0;
+    if(root->rightChild!=NULL && findMin(root->rightChild) < root->number)
+        return 0;
+    if(!isItBst(root->leftChild) || !isItBst(root->rightChild))
+        return 0;
+
+    return 1;
+}
+
+int findMin(node *root)
+{
+    if(root->leftChild==NULL)
+        return root->number;
+
+    return findMin(root->leftChild);
+}
+
+int findMax(node *root)
+{
+    if(root->rightChild==NULL)
+        return root->number;
+
+    return findMax(root->rightChild);
+}
+
+int isBstInOrderTraversal(node *root, int previous)
+{
+    if(root==NULL) return 1; //Base case
+
+    if(!isBstInOrderTraversal(root->leftChild, previous))
+        return 0;
+
+    if(root->number < previous)
+        return 0;
+
+    previous = root->number;
+
+    return isBstInOrderTraversal(root->rightChild, previous);
+}
+
+
+void insertNode(int value)
+{
+    node *tempNode;
+    node *currentNode;
+    node *parentNode;
+
+    tempNode = (node *) malloc(sizeof(node));
+    tempNode->number = value;
+    tempNode->leftChild = NULL;
+    tempNode->rightChild = NULL;
+
+    //For the very first call
+    if(root==NULL)
+    {
+        root = tempNode;
+    }
+    else
+    {
+        currentNode = root;
+        parentNode = NULL;
+
+        while(1)
+        {
+            parentNode = currentNode;
+
+            if(value <= parentNode->number)
+            {
+                currentNode = currentNode->leftChild;
+
+                if(currentNode==NULL)
+                {
+                    parentNode->leftChild = tempNode;
+                    return;
+                }
+            }
+            else
+            {
+                currentNode = currentNode->rightChild;
+
+                if(currentNode==NULL)
+                {
+                    parentNode->rightChild = tempNode;
+                    return;
+                }
+            }
+
+        }
+    }
+}
+
+
+void inOrderPrint(node *root)
+{
+    if(root==NULL)
+        return;
+
+    inOrderPrint(root->leftChild);
+
+    printf("%d ", root->number);
+
+    inOrderPrint(root->rightChild);
+}
