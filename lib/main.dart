@@ -30,13 +30,13 @@ import 'package:flutter/material.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   final initFuture = MobileAds.instance.initialize();
-  final adState = AdState(initFuture);
+  //final adState = AdState(initFuture);
   runApp(
-    //MyApp(),
-    Provider.value(
-      value: adState,
-      builder: (context, child) => MyApp(),
-    )
+    MyApp()
+  //   Provider.value(
+  //     value: adState,
+  //     builder: (context, child) => MyApp(),
+  //
   );
 }
 

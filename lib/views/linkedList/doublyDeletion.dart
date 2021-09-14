@@ -435,7 +435,7 @@ bool isValueAvailable(int value)
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

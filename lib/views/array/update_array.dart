@@ -121,7 +121,7 @@ int main()
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

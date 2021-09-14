@@ -213,7 +213,7 @@ int myAlgorithm6(char *s)
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

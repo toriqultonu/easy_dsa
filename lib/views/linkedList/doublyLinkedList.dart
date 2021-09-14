@@ -375,7 +375,7 @@ void printLinkedListBackward()
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

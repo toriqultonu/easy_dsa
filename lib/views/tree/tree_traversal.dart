@@ -333,7 +333,7 @@ void postOrderPrint(node *rootNode)
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

@@ -126,7 +126,7 @@ class _TreeState extends State<Tree> {
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
               ),
             ),
 
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
 
           ],
         ),

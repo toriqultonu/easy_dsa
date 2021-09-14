@@ -182,7 +182,7 @@ for(i = 0; i<number_of_student; i++)
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

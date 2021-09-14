@@ -312,7 +312,7 @@ void preOrderPrint(node *root)
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
       ),

@@ -113,7 +113,7 @@ class ApplicationOfTree extends StatelessWidget {
                 ],
               ),
             ),
-            BannerAdsWidgets(),
+            //BannerAdsWidgets(),
           ],
         ),
 
