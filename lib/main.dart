@@ -23,20 +23,21 @@ import 'package:easy_dsa/views/tree/delete_node.dart';
 import 'package:easy_dsa/views/tree/maximum_minimum.dart';
 import 'package:easy_dsa/views/tree/treeView.dart';
 import 'package:easy_dsa/views/tree/tree_traversal.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:provider/provider.dart';
+// import 'package:google_mobile_ads/google_mobile_ads.dart';
+// import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  final initFuture = MobileAds.instance.initialize();
+  //final initFuture = MobileAds.instance.initialize();
   //final adState = AdState(initFuture);
   runApp(
     MyApp()
   //   Provider.value(
-  //     value: adState,
+  //     //value: adState,
   //     builder: (context, child) => MyApp(),
   //
+  // )
   );
 }
 
