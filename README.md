@@ -12,6 +12,6 @@ All the data stuctures are implemented in C language. Any one can copy the code 
 
 ## Screenshots
 
-<img src="https://github.com/toriqultonu/Tution_Khata/blob/main/%E0%A6%9F%E0%A6%BF%E0%A6%89%E0%A6%B6%E0%A6%A8%20%E0%A6%96%E0%A6%BE%E0%A6%A4%E0%A6%BE/Tution_khata_SS/login.png" width="260">&emsp;
+<img src="https://user-images.githubusercontent.com/50527978/175776196-19bc7aac-1bd1-4fb1-b9df-12e62a294fea.jpg" width="260">&emsp;
 
  <p align="right">(<a href="#top">back to top</a>)</p>
