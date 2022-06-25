@@ -1,6 +1,6 @@
 # easy_dsa
 
-A Flutter app to teach dsa in Bangeli
+A cross platform mobile app to learn data struecture in Bangeli
 
 ## About The Project
 
