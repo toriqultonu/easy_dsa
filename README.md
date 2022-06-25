@@ -2,15 +2,10 @@
 
 A Flutter app to teach dsa in Bangeli
 
-## Getting Started
+## About The Project
 
-This project is a starting point for a Flutter application.
+EasyDS is a minimalist and beautiful data structure Bengali guide in your hand for fee and offline. EasyDS covers all the basic data stucture concepts taught in a computer science course. It can be your starting point of learning data structures. 
+EasyDS enables reading concepts offline(without internet). Download the app and read it whenever you feel like. No internet connection is required.
+All the data stuctures are implemented in C language. Any one can copy the code snippits for their own uses.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="right">(<a href="#top">back to top</a>)</p>
