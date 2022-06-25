@@ -10,6 +10,22 @@ All the data stuctures are implemented in C language. Any one can copy the code 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Features:
+
+These are the features user will have..
+
+* Read offline
+* Easy to use interface
+* All the topics are written with suitable graphics
+* Related code snippits are given.
+* Easy to copy code snippits.
+
+### Build with: 
+
+* [Flutter](https://flutter.dev//)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Screenshots
 
 <img src="https://user-images.githubusercontent.com/50527978/175776196-19bc7aac-1bd1-4fb1-b9df-12e62a294fea.jpg" width="260">&emsp;
