@@ -1,4 +1,4 @@
-# easy_dsa
+# EasyDS
 
 A cross platform mobile app to learn data struecture in Bangeli
 
