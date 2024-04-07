@@ -1,5 +1,5 @@
 # EasyDS
-<img src="https://github.com/toriqultonu/Tution_Khata/blob/main/%E0%A6%9F%E0%A6%BF%E0%A6%89%E0%A6%B6%E0%A6%A8%20%E0%A6%96%E0%A6%BE%E0%A6%A4%E0%A6%BE/tution_khata_cover.png">
+<img src="https://raw.githubusercontent.com/toriqultonu/easy_dsa/main/Images/cover.png">
 A cross platform mobile app to learn data struecture in Bangeli
 
 ## About The Project
